@@ -21,7 +21,7 @@ const Navbar = () => {
             alt="job_swag_logo"
             className="object-contain"
           />
-          <div className=" hidden md:flex flex-1 justify-around ">
+          <div className=" hidden lg:flex flex-1 justify-around ">
             <div className="flex gap-x-6 items-end justify-center  w-full font-medium">
               <Link className="text-main text-sm" to="/">
                 Home

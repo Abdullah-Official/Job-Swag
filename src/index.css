@@ -4,8 +4,19 @@
  
 body{
   background-color: #ffff;
-  overflow-x: hidden
+  overflow-x: hidden !important;
 }
+
+.slick-prev , .slick-next{
+  background-color: #55A7A6 !important;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50%;
+  padding: 5px !important;
+  
+}
+
+
 @layer utilities {
   .text-heading {
     @apply text-3xl font-bold text-[#1B4C81]; /* Example styles for headings */
@@ -84,3 +95,6 @@ body{
     @apply bg-background text-foreground;
   }
 }
+
+
+
