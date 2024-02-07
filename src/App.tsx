@@ -10,7 +10,6 @@ function App() {
      <div className="pt-[8rem]">
      <Routes>
         <Route
-          exact={true}
           path="/"
           element={<Home />}
         />
