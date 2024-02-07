@@ -45,8 +45,8 @@ const PopularCategories = () => {
       },
       
     ],
-    customPaging: (i: React.Key | null | undefined,active: boolean) => (
-      <div key={i} className={`${!active ? "bg-primary" : "bg-gray-200"} rounded-full w-2 h-2`}></div>
+    customPaging: () => (
+      <div className={`bg-primary rounded-full w-2 h-2`}></div>
 
 
     ),
