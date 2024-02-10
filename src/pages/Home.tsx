@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection";
+import AdSection from "@/components/Home/AdSection";
 import FeaturedInfluencers from "@/components/Home/FeaturedInfluencers";
 import FeaturedJobs from "@/components/Home/FeaturedJobs";
 import PartnersCarousel from "@/components/Home/PartnersCarousel";
@@ -11,13 +12,15 @@ export default function Home() {
   return (
     <div className="">
       <HeroSection />
-      <div className="my-20 space-y-20">
+      <div className="my-20 space-y-20 md:container mx-auto">
         {/* Video Container  */}
         <VideoCards />
         <PopularCategories />
+        <AdSection />
         <FeaturedJobs />
         <FeaturedInfluencers />
         <RecentBlogs />
+        <AdSection />
         <PartnersCarousel />
       </div>
     </div>

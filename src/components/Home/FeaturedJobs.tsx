@@ -1,6 +1,7 @@
 import FeatureCard from "../common/FeatureCard";
 import { Button } from "../ui/button";
 
+
 const FeaturedJobs = () => {
   return (
     <div className="container">

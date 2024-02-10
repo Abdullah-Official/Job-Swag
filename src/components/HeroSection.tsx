@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 export default function HeroSection() {
   return (
     <section
-      className={`bg-no-repeat bg-center bg-cover h-auto md:h-[80vh]`}
+      className={`bg-no-repeat bg-center bg-cover h-auto md:h-[80vh] -mt-2`}
       style={{ backgroundImage: `url(${Banner})` }}
     >
       <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen  lg:px-8">

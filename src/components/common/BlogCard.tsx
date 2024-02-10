@@ -4,7 +4,7 @@ import { Eye, MessageCircle, ThumbsUp } from "lucide-react";
 
 const BlogCard = () => {
   return (
-    <Card className="w-[350px] px-5 py-6 space-y-7 shadow-lg rounded-lg border-none">
+    <Card className="sm:w-[350px] w-full px-5 py-6 space-y-7 mx-2 card-boxshadow rounded-xl border-none">
       <img
         src={BlogImg}
         alt="JobFeature"

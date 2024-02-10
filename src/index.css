@@ -16,6 +16,18 @@ body{
   
 }
 
+.card-boxshadow{
+  box-shadow: 10px 20px 50px 0px #0000001A !important;
+
+}
+
+.partner_card{
+  box-shadow: 10.389610290527344px 15.584415435791016px 51.94805145263672px 0px #4242421a;
+}
+.common-header{
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px
+}
 
 @layer utilities {
   .text-heading {

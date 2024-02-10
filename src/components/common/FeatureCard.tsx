@@ -5,7 +5,7 @@ import { Heart } from "lucide-react";
 
 const FeatureCard = () => {
   return (
-    <Card className="w-[350px] px-5 py-6 space-y-5 shadow-lg rounded-lg border-none">
+    <Card className="w-[350px] px-5 py-6 space-y-5 mx-2 card-boxshadow rounded-xl border-none">
       <img
         src={JobFeature}
         alt="JobFeature"
