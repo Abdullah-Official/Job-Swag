@@ -14,13 +14,15 @@ const Navbar = () => {
       </header>
       <nav className="p-5 bg-white">
         <div className="container flex items-center">
-          <img
-            src={Logo}
-            width={150}
-            height={150}
-            alt="job_swag_logo"
-            className="object-contain"
-          />
+          <Link to={"/"}>
+            <img
+              src={Logo}
+              width={150}
+              height={150}
+              alt="job_swag_logo"
+              className="object-contain"
+            />
+          </Link>
           <div className=" hidden lg:flex flex-1 justify-around ">
             <div className="flex gap-x-6 items-end justify-center  w-full font-medium">
               <Link className="text-main text-sm" to="/">
@@ -32,16 +34,16 @@ const Navbar = () => {
               <Link className="text-main text-sm" to="/how">
                 How It Works
               </Link>
-              <Link className="text-main text-sm" to="/">
+              <Link className="text-main text-sm" to="/featured-jobs">
                 Featured Jobs
               </Link>
-              <Link className="text-main text-sm" to="/">
+              <Link className="text-main text-sm" to="/advertise">
                 Advertise
               </Link>
-              <Link className="text-main text-sm" to="/">
+              <Link className="text-main text-sm" to="/blog">
                 Blog
               </Link>
-              <Link className="text-main text-sm" to="/">
+              <Link className="text-main text-sm" to="/contact">
                 Contact
               </Link>
             </div>

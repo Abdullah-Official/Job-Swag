@@ -1,12 +1,15 @@
 import { Card, CardDescription, CardTitle } from "@/components/ui/card";
-import BlogImg from "@/assets/images/blog-img.png";
 import { Eye, MessageCircle, ThumbsUp } from "lucide-react";
 
-const BlogCard = () => {
+interface BlogCardPropTypes {
+  img: string;
+}
+
+const BlogCard = ({ img }: BlogCardPropTypes) => {
   return (
-    <Card className="sm:w-[350px] w-full px-5 py-6 space-y-7 mx-2 card-boxshadow rounded-xl border-none">
+    <Card className="w-auto max-w-[350px] px-5 py-6 space-y-7 mx-2 card-boxshadow rounded-xl border-none">
       <img
-        src={BlogImg}
+        src={img}
         alt="JobFeature"
         className="object-contain w-full h-auto"
       />
@@ -22,7 +25,9 @@ const BlogCard = () => {
         </div>
         <div className="flex justify-between items-center">
           <p className="text-main font-400 text-sm ">Author: Alex Thomas</p>
-          <p className="text-main_green text-xs pt-2 font-[600] cursor-pointer ">Follow</p>
+          <p className="text-main_green text-xs pt-2 font-[600] cursor-pointer ">
+            Follow
+          </p>
         </div>
         <div className="flex justify-between items-center pt-2">
           <p className="text-main font-400 text-sm ">dd-mm-yyyy </p>

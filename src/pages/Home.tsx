@@ -7,7 +7,6 @@ import PopularCategories from "@/components/Home/PopularCategories";
 import RecentBlogs from "@/components/Home/RecentBlogs";
 import { VideoCards } from "@/components/Home/VideoCards";
 
-
 export default function Home() {
   return (
     <div className="">

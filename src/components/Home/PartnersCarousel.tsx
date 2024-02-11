@@ -11,8 +11,8 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const PartnersCarousel = () => {
   const settings = {
-    slidesToShow: 5,
-    slidesToScroll: 2,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     autoplaySpeed: 3000,
     arrows: true,
     dots: false,
