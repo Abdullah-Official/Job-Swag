@@ -8,6 +8,8 @@ import Blog from "./pages/Blog";
 import Advertise from "./pages/Advertise";
 import FeatureJobs from "./pages/FeaturedJobs";
 import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import CreateAccount from "./pages/CreateAccount";
 
 function App() {
   return (
@@ -43,6 +45,14 @@ function App() {
         <Route
           path="/contact"
           element={<Contact />}
+        />
+        <Route
+          path="/login"
+          element={<Login />}
+        />
+         <Route
+          path="/create-acc"
+          element={<CreateAccount />}
         />
       </Routes>
      </div>

@@ -16,6 +16,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import AdSection from "@/components/Home/AdSection";
+import PartnersCarousel from "@/components/Home/PartnersCarousel";
 
 const FeatureJobs = () => {
   const selectsArr = [
@@ -63,7 +65,7 @@ const FeatureJobs = () => {
         </div>
       </div>
 
-      <div className="md:container mt-16 space-y-10 ">
+      <div className="md:container mt-16 space-y-16 ">
         <div className="flex gap-4 flex-col md:flex-row container justify-center">
           {selectsArr.map((v, i) => (
             <Select key={i}>
@@ -90,6 +92,12 @@ const FeatureJobs = () => {
           <FeatureCard img={JobFeature} />
           <FeatureCard img={JobFeature2} />
           <FeatureCard img={JobFeature3} />
+        </div>
+        <div>
+          <AdSection />
+        </div>
+        <div>
+          <PartnersCarousel />
         </div>
       </div>
     </div>

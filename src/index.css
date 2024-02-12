@@ -16,6 +16,11 @@ body{
   
 }
 
+.form_box_shadow{
+  box-shadow: 0px 10px 50px 0px #0000001A;
+
+}
+
 .card-boxshadow{
   box-shadow: 10px 20px 50px 0px #0000001A !important;
 

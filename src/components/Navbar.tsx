@@ -48,13 +48,17 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="flex gap-x-4">
-              <Button
-                className="text-main_green hover:text-main_green"
-                variant="outline"
-              >
-                Login
-              </Button>
-              <Button>Create Account</Button>
+              <Link to="/login">
+                <Button
+                  className="text-main_green hover:text-main_green"
+                  variant="outline"
+                >
+                  Login
+                </Button>
+              </Link>
+              <Link to={"/create-acc"}>
+                <Button>Create Account</Button>
+              </Link>
             </div>
           </div>
         </div>

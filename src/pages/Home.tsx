@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="">
       <HeroSection />
-      <div className="my-20 space-y-20 md:container mx-auto">
+      <div className="my-20 space-y-20">
         {/* Video Container  */}
         <VideoCards />
         <PopularCategories />
