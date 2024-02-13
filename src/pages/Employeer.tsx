@@ -4,7 +4,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import PicAvatar from "@/assets/images/pic-avatar.png";
 import VideoOpt from "@/assets/images/video-bg.png";
-import UploadDoc from "@/assets/images/upload-doc.png";
 import { UploadIcon } from "lucide-react";
 import { Textarea } from "@/components/ui/textarea";
 import AddComponent from "@/components/common/AddComponent";
