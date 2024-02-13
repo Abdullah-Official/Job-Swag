@@ -21,6 +21,12 @@ body{
 
 }
 
+.create_acc_card{
+  box-shadow: 10px 20px 30px 0px #55A7A626;
+  border-color: #55A7A6 !important;
+
+}
+
 .card-boxshadow{
   box-shadow: 10px 20px 50px 0px #0000001A !important;
 

@@ -12,8 +12,8 @@ const PopularCategories = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     variableHeight: true,
-    prevArrow: <ArrowLeft  color="white"  />,
-    nextArrow: <ArrowRight  color="white"  />,
+    prevArrow: <ArrowLeft color="white" />,
+    nextArrow: <ArrowRight color="white" />,
     responsive: [
       {
         breakpoint: 1024,
@@ -42,12 +42,9 @@ const PopularCategories = () => {
           slidesPerRow: 1,
         },
       },
-      
     ],
     customPaging: () => (
       <div className={`bg-primary rounded-full w-2 h-2`}></div>
-
-
     ),
   };
 
@@ -56,7 +53,7 @@ const PopularCategories = () => {
       <h1 className="text-heading text-center">Popular Categories</h1>
 
       <div className="container">
-        <Slider  {...settings}>
+        <Slider {...settings}>
           {/* First Slide */}
           <div className="space-y-3 h-auto py-5">
             {Array.from({ length: 3 }).map((_, ind) => (

@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/images/Logo.png";
 import { Button } from "./ui/button";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "./ui/sheet";
+import { Menu } from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -13,7 +21,7 @@ const Navbar = () => {
         </p>
       </header>
       <nav className="p-5 bg-white">
-        <div className="container flex items-center">
+        <div className="container flex justify-between items-center">
           <Link to={"/"}>
             <img
               src={Logo}
@@ -23,6 +31,67 @@ const Navbar = () => {
               className="object-contain"
             />
           </Link>
+          <Sheet>
+            <SheetTrigger asChild>
+              <div className="flex items-center cursor-pointer lg:hidden">
+                <Menu />
+              </div>
+            </SheetTrigger>
+            <SheetContent side={"left"}>
+              <SheetHeader>
+                <SheetTitle>
+                  <Link to={"/"}>
+                    <img
+                      src={Logo}
+                      width={150}
+                      height={150}
+                      alt="job_swag_logo"
+                      className="object-contain"
+                    />
+                  </Link>
+                </SheetTitle>
+              </SheetHeader>
+
+              <div className="my-10">
+                <div className="flex flex-col gap-y-6 justify-center  w-full font-medium">
+                  <Link className="text-main text-sm" to="/">
+                    Home
+                  </Link>
+                  <Link className="text-main text-sm" to="/about">
+                    About
+                  </Link>
+                  <Link className="text-main text-sm" to="/how">
+                    How It Works
+                  </Link>
+                  <Link className="text-main text-sm" to="/featured-jobs">
+                    Featured Jobs
+                  </Link>
+                  <Link className="text-main text-sm" to="/advertise">
+                    Advertise
+                  </Link>
+                  <Link className="text-main text-sm" to="/blog">
+                    Blog
+                  </Link>
+                  <Link className="text-main text-sm" to="/contact">
+                    Contact
+                  </Link>
+                </div>
+                <div className="flex gap-4 mt-5">
+                  <Link to="/login">
+                    <Button
+                      className="text-main_green hover:text-main_green"
+                      variant="outline"
+                    >
+                      Login
+                    </Button>
+                  </Link>
+                  <Link to={"/create-acc"}>
+                    <Button>Create Account</Button>
+                  </Link>
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
           <div className=" hidden lg:flex flex-1 justify-around ">
             <div className="flex gap-x-6 items-end justify-center  w-full font-medium">
               <Link className="text-main text-sm" to="/">

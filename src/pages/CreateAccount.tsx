@@ -4,12 +4,21 @@ import Employeer from "@/assets/images/employeer.png";
 import Influencer from "@/assets/images/influencer.png";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const CreateAccount = () => {
+  const [accType, setAccType] = useState("");
+  const navigate = useNavigate();
+
   return (
     <div className="mb-20 flex flex-col md:flex-row">
       <div className="md:w-[65%] lg:w-[75%] w-full">
-        <img src={CreateAccBg} className="w-full md:w-[90%]" alt="" />
+        <img
+          src={CreateAccBg}
+          className="w-full md:w-[90%] rounded-br-[80px] rounded-tr-[80px]"
+          alt=""
+        />
       </div>
       <div className="flex justify-center md:-ml-60">
         <div className="bg-white w-full md:w-fit lg:w-[550px] h-fit mt-20 mx-4 md:mx-0 form_box_shadow flex flex-col gap-y-5 rounded-[30px] p-7  md:p-12  ">
@@ -22,13 +31,17 @@ const CreateAccount = () => {
           {/* // TODO */}
           <div className="grid grid-cols-12 gap-5">
             <label
-              htmlFor="terms"
-              className="col-span-12 md:col-span-6  cursor-pointer rounded-lg items-center relative px-5 py-6 w-full border border-[#C6C6C6]"
+              onClick={() => setAccType("job-seeker")}
+              htmlFor="job-seeker"
+              className={`${
+                accType === "job-seeker" ? "create_acc_card " : null
+              } col-span-12 md:col-span-6  cursor-pointer rounded-lg items-center relative px-5 py-6 w-full border border-[#C6C6C6]`}
             >
               <div className="absolute right-5 top-3">
                 <Checkbox
                   className="rounded-full  border-[#C6C6C6] "
-                  id="terms"
+                  id="job-seeker"
+                  checked={accType === "job-seeker"}
                 />
               </div>
               <div className="flex  gap-x-4 items-center">
@@ -43,13 +56,17 @@ const CreateAccount = () => {
               </div>
             </label>
             <label
-              htmlFor="terms"
-              className="col-span-12 md:col-span-6  cursor-pointer rounded-lg items-center relative px-5 py-6 w-full border border-[#C6C6C6]"
+              onClick={() => setAccType("employeer")}
+              htmlFor="employeer"
+              className={`${
+                accType === "employeer" ? "create_acc_card " : null
+              } col-span-12 md:col-span-6  cursor-pointer rounded-lg items-center relative px-5 py-6 w-full border border-[#C6C6C6]`}
             >
               <div className="absolute right-5 top-3">
                 <Checkbox
                   className="rounded-full  border-[#C6C6C6] "
-                  id="terms"
+                  id="employeer"
+                  checked={accType === "employeer"}
                 />
               </div>
               <div className="flex  gap-x-4 items-center">
@@ -64,13 +81,17 @@ const CreateAccount = () => {
               </div>
             </label>
             <label
-              htmlFor="terms"
-              className="col-span-12 md:col-span-6  cursor-pointer rounded-lg items-center relative px-5 py-6 w-full border border-[#C6C6C6]"
+              onClick={() => setAccType("influencer")}
+              htmlFor="influencer"
+              className={`${
+                accType === "influencer" ? "create_acc_card " : null
+              } col-span-12 md:col-span-6  cursor-pointer rounded-lg items-center relative px-5 py-6 w-full border border-[#C6C6C6]`}
             >
               <div className="absolute right-5 top-3">
                 <Checkbox
                   className="rounded-full  border-[#C6C6C6] "
-                  id="terms"
+                  id="influencer"
+                  checked={accType === "influencer"}
                 />
               </div>
               <div className="flex  gap-x-4 items-center">
@@ -86,7 +107,9 @@ const CreateAccount = () => {
             </label>
           </div>
           <div className="flex justify-center flex-col gap-y-6 items-center mt-5 w-full ">
-            <Button className="w-full ">Continue</Button>
+            <Button onClick={() => navigate(`/${accType}`)} className="w-full ">
+              Continue
+            </Button>
             <p className="text-[#7C7C7C] text-md font-[450]">
               Already have an account,
               <span className="text-main_green"> Log In</span>

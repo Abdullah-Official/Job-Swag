@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes,Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -10,54 +10,31 @@ import FeatureJobs from "./pages/FeaturedJobs";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import CreateAccount from "./pages/CreateAccount";
+import JobSeeker from "./pages/JobSeeker";
+import Employeer from "./pages/Employeer";
 
 function App() {
   return (
     <>
-    <Router>
+      <Router>
         <Navbar />
-     <div className="pt-[8rem]">
-     <Routes>
-        <Route
-          path="/"
-          element={<Home />}
-        />
-        <Route
-          path="/about"
-          element={<About />}
-        />
-        <Route
-          path="/how"
-          element={<HowItWorks />}
-        />
-        <Route
-          path="/blog"
-          element={<Blog />}
-        />
-        <Route
-          path="/advertise"
-          element={<Advertise />}
-        />
-        <Route
-          path="/featured-jobs"
-          element={<FeatureJobs />}
-        />
-        <Route
-          path="/contact"
-          element={<Contact />}
-        />
-        <Route
-          path="/login"
-          element={<Login />}
-        />
-         <Route
-          path="/create-acc"
-          element={<CreateAccount />}
-        />
-      </Routes>
-     </div>
-     <Footer />
-    </Router>
+        <div className="pt-[8rem]">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/how" element={<HowItWorks />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/advertise" element={<Advertise />} />
+            <Route path="/featured-jobs" element={<FeatureJobs />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/create-acc" element={<CreateAccount />} />
+            <Route path="/job-seeker" element={<JobSeeker />} />
+            <Route path="/employeer" element={<Employeer />} />
+          </Routes>
+        </div>
+        <Footer />
+      </Router>
     </>
   );
 }
