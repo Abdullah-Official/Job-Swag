@@ -18,6 +18,7 @@ function App() {
     <>
       <Router>
         <Navbar />
+        {/* <NavbarJobSeeker /> */}
         <div className="pt-[8rem]">
           <Routes>
             <Route path="/" element={<Home />} />

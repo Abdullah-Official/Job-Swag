@@ -35,8 +35,8 @@ const PartnersCarousel = () => {
     ],
   };
   return (
-    <div className="container max-w-[95%] !my-20 md:max-w-[80%]">
-      <Slider {...settings}>
+    <div className="container mx-auto  max-w-[95%] !my-20 lg:max-w-[90%]">
+      <Slider className="lg:container" {...settings}>
         {/* partner_card */}
         <div>
           <div className="flex items-center justify-center">

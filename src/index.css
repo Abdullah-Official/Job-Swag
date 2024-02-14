@@ -16,6 +16,11 @@ body{
   
 }
 
+.shadow_dropdown{
+  box-shadow: 0px 10px 30px 0px #0000001A;
+
+}
+
 .form_box_shadow{
   box-shadow: 0px 10px 50px 0px #0000001A;
 

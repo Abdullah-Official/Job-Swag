@@ -9,7 +9,6 @@ import {
   SheetTrigger,
 } from "./ui/sheet";
 import { Menu } from "lucide-react";
-
 const Navbar = () => {
   return (
     <div className=" w-full fixed !z-50">
@@ -20,17 +19,19 @@ const Navbar = () => {
           Your Business &nbsp; | &nbsp; BEE A Honey BEE Childrens Book
         </p>
       </header>
-      <nav className="p-5 bg-white">
-        <div className="container flex justify-between items-center">
-          <Link to={"/"}>
-            <img
-              src={Logo}
-              width={150}
-              height={150}
-              alt="job_swag_logo"
-              className="object-contain"
-            />
-          </Link>
+      <nav className="p-5 bg-white ">
+        <div className="container md:px-10 flex justify-between gap-x-3 items-center">
+          <div>
+            <Link to={"/"}>
+              <img
+                src={Logo}
+                width={150}
+                height={150}
+                alt="job_swag_logo"
+                className="object-contain"
+              />
+            </Link>
+          </div>
           <Sheet>
             <SheetTrigger asChild>
               <div className="flex items-center cursor-pointer lg:hidden">
@@ -92,8 +93,8 @@ const Navbar = () => {
               </div>
             </SheetContent>
           </Sheet>
-          <div className=" hidden lg:flex flex-1 justify-around ">
-            <div className="flex gap-x-6 items-end justify-center  w-full font-medium">
+          <div className=" hidden lg:flex gap-x-10">
+            <div className="flex gap-x-8 items-end   w-full font-medium">
               <Link className="text-main text-sm" to="/">
                 Home
               </Link>

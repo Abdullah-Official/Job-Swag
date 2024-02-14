@@ -3,6 +3,7 @@ import { Button } from "../ui/button";
 import JobFeature from "@/assets/images/job-feature.png";
 import JobFeature2 from "@/assets/images/job-feature2.png";
 import JobFeature3 from "@/assets/images/job-feature3.png";
+import { Link } from "react-router-dom";
 
 const FeaturedJobs = () => {
   return (
@@ -14,7 +15,9 @@ const FeaturedJobs = () => {
           <FeatureCard img={JobFeature2} />
           <FeatureCard img={JobFeature3} />
         </div>
+        <Link to={"/featured-jobs"}>
         <Button className="w-28">See All</Button>
+        </Link>
       </div>
     </div>
   );

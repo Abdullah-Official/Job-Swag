@@ -3,6 +3,7 @@ import { Button } from "../ui/button";
 import BlogImg from "@/assets/images/blog-img.png";
 import BlogImg2 from "@/assets/images/blog-img2.png";
 import BlogImg3 from "@/assets/images/blog-img3.png";
+import { Link } from "react-router-dom";
 
 const RecentBlogs = () => {
   return (
@@ -14,7 +15,9 @@ const RecentBlogs = () => {
           <BlogCard img={BlogImg} />
           <BlogCard img={BlogImg2} />
         </div>
+        <Link to={"/blog"}>
         <Button className="w-28">See All</Button>
+        </Link>
       </div>
     </div>
   );
