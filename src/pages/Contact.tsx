@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 
 const Contact = () => {
   return (
-    <div className="mb-20 -mt-2">
+    <div className="mb-20 -mt-1">
       <CommonHeader title="Contact Us" bannerImg={Banner} />
       <div className="md:container mt-16 ">
         <div className="flex flex-wrap justify-center items-center flex-col   gap-x-7 gap-y-10">

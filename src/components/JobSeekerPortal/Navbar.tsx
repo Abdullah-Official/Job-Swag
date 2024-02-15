@@ -53,8 +53,8 @@ const NavbarJobSeeker = () => {
           Your Business &nbsp; | &nbsp; BEE A Honey BEE Childrens Book
         </p>
       </header>
-      <nav className="p-5 bg-white ">
-        <div className="container md:px-10 flex justify-between gap-x-3 items-center">
+      <nav className="p-5 container border-0 border-b-2 bg-[#fafafa] ">
+        <div className="container  flex justify-between gap-x-3 items-center">
           <div>
             <Link to={"/"}>
               <img

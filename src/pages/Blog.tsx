@@ -7,7 +7,7 @@ import BlogImg3 from "@/assets/images/blog-img3.png";
 
 const Blog = () => {
   return (
-    <div className="mb-20 -mt-2">
+    <div className="mb-20 -mt-1">
       <CommonHeader title="Blog" bannerImg={Banner} />
       <div className="md:container mt-16 ">
         <div className="flex flex-wrap md:flex-row justify-center items-center flex-col   gap-x-7 gap-y-5">

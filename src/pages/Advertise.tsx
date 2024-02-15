@@ -11,7 +11,7 @@ import HomepageImg from "@/assets/images/banner-adv.png";
 
 const Advertise = () => {
   return (
-    <div className="mb-20 -mt-2">
+    <div className="mb-20 -mt-1">
       <CommonHeader title="Advertise" bannerImg={Banner} />
       <div className="md:container mt-16">
         <div className="container w-full space-y-5 sm:space-y-10">

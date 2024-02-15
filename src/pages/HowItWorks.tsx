@@ -6,7 +6,7 @@ import How3 from "@/assets/images/how3.png";
 
 const HowItWorks = () => {
   return (
-    <div className="mb-20 -mt-2">
+    <div className="mb-20 -mt-1">
       <CommonHeader title="How It Works" bannerImg={Banner} />
       <div className="md:container mt-16 space-y-10">
         <div className="text-center space-y-4">
