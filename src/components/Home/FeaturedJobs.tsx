@@ -16,7 +16,7 @@ const FeaturedJobs = () => {
           <FeatureCard img={JobFeature3} />
         </div>
         <Link to={"/featured-jobs"}>
-        <Button className="w-28">See All</Button>
+          <Button className="w-28">See All</Button>
         </Link>
       </div>
     </div>

@@ -15,6 +15,7 @@ const EmployeePortalHome = () => {
           <Link className="text-main text-sm" to="/analytics">
             Analytics
           </Link>
+          
         </div>
       <SearchComponent />
       <div className="border-b-[1px] overflow-x-auto w-full border-[#C6C6C6] flex items-center gap-x-5 justify-center">
@@ -26,7 +27,7 @@ const EmployeePortalHome = () => {
         </button>
       </div>
       <div className="flex flex-wrap md:flex-row justify-center flex-col gap-x-7 gap-y-5">
-        <RecentSearchCard img={Applicant1} />
+        <RecentSearchCard img={Applicant1}  />
         <RecentSearchCard img={Applicant2} />
         <RecentSearchCard img={Applicant3} />
       </div>

@@ -1,11 +1,15 @@
 import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 import { Eye, MessageCircle, ThumbsUp } from "lucide-react";
+import editIcon from "@/assets/images/edit.png";
+import deleteIcon from "@/assets/images/delete.png";
+import hideIcon from "@/assets/images/hide.png";
 
 interface BlogCardPropTypes {
   img: string;
+  editMode?: boolean;
 }
 
-const BlogCard = ({ img }: BlogCardPropTypes) => {
+const BlogCard = ({ img, editMode }: BlogCardPropTypes) => {
   return (
     <Card className="w-auto max-w-[350px] px-5 py-6 space-y-7 mx-2 card-boxshadow rounded-xl border-none">
       <img
@@ -14,7 +18,7 @@ const BlogCard = ({ img }: BlogCardPropTypes) => {
         className="object-contain w-full h-auto"
       />
       <div className="space-y-2">
-        <CardTitle className="text-[#1B4C81] font-bold">
+        <CardTitle className="text-[#1B4C81] text-[22px] font-bold">
           Blog Title Here
         </CardTitle>
         <div>
@@ -43,6 +47,25 @@ const BlogCard = ({ img }: BlogCardPropTypes) => {
             </p>
           </div>
         </div>
+        {editMode ? (
+          <div className="pt-3 space-y-5">
+            <hr />
+            <div className="flex gap-x-6">
+              <div className="flex gap-x-2 cursor-pointer">
+                <img src={editIcon} className="object-contain w-4 h-4" />
+                <p className="font-[500] text-main text-xs">Edit</p>
+              </div>
+              <div className="flex gap-x-2 cursor-pointer">
+                <img src={hideIcon} className="object-contain w-4 h-4" />
+                <p className="font-[500] text-main text-xs">Hide</p>
+              </div>
+              <div className="flex gap-x-2 cursor-pointer">
+                <img src={deleteIcon} className="object-contain w-4 h-4" />
+                <p className="font-[500] text-main text-xs">Delete</p>
+              </div>
+            </div>
+          </div>
+        ) : null}
       </div>
     </Card>
   );

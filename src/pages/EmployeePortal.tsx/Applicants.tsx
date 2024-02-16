@@ -50,13 +50,13 @@ const Applicants = () => {
         </p>
         <SortSelect />
       </div>
-      <div className="flex flex-wrap md:flex-row justify-center md:justify-evenly items-center flex-col gap-x-7 gap-y-5">
-        <RecentSearchCard img={Applicant1} />
-        <RecentSearchCard img={Applicant2} />
-        <RecentSearchCard img={Applicant3} />
-        <RecentSearchCard img={Applicant1} />
-        <RecentSearchCard img={Applicant2} />
-        <RecentSearchCard img={Applicant3} />
+      <div className="flex flex-wrap md:flex-row justify-center  items-center flex-col gap-x-6 gap-y-5">
+        <RecentSearchCard img={Applicant1} applicantMode={true} />
+        <RecentSearchCard img={Applicant2} applicantMode={true} />
+        <RecentSearchCard img={Applicant3} applicantMode={true} />
+        <RecentSearchCard img={Applicant1} applicantMode={true} />
+        <RecentSearchCard img={Applicant2} applicantMode={true} />
+        <RecentSearchCard img={Applicant3} applicantMode={true} />
       </div>
     </div>
   );

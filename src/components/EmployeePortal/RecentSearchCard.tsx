@@ -4,11 +4,12 @@ import { Card, CardDescription, CardTitle } from "../ui/card";
 
 interface RecentSearchCardPropsTypes {
     img: string;
+    applicantMode?: boolean
   }
 
-const RecentSearchCard = ({img}: RecentSearchCardPropsTypes) => {
+const RecentSearchCard = ({img, applicantMode}: RecentSearchCardPropsTypes) => {
   return (
-    <Card className="w-auto max-w-[350px] px-5 py-7 space-y-5 mx-2 card-boxshadow rounded-xl border-none">
+    <Card className="w-auto max-w-[380px] px-5 py-7 space-y-5 mx-2 card-boxshadow rounded-xl border-none">
       <div className="flex gap-x-4">
         <img
           src={img}
@@ -46,7 +47,17 @@ const RecentSearchCard = ({img}: RecentSearchCardPropsTypes) => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
         </CardDescription>
       </div>
-      <Button className="text-[12px] px-5">View Profile</Button>
+      {
+        !applicantMode ? (<Button className="text-[12px] px-5">View Profile</Button>) : (
+          <>
+            <p className="text-[#888888] text-xs">Added on <b>DD-MM-YYYY</b></p>
+            <div className="flex gap-x-5">
+                <Button>Download Resume</Button>
+                <Button variant="outline" className="text-main_green hover:text-main_green">View Profile</Button>
+            </div>
+          </>
+        )
+      }
     </Card>
   );
 };

@@ -76,6 +76,9 @@ const Navbar = () => {
                   <Link className="text-main text-sm" to="/contact">
                     Contact
                   </Link>
+                  <Link className="text-main text-sm" to="/emp-portal">
+                    Employee Portal
+                  </Link>
                 </div>
                 <div className="flex gap-4 mt-5">
                   <Link to="/login">
@@ -119,7 +122,6 @@ const Navbar = () => {
               <Link className="text-main text-sm" to="/emp-portal">
                 Employee Portal
               </Link>
-              
             </div>
             <div className="flex gap-x-4">
               <Link to="/login">

@@ -21,6 +21,7 @@ import NavbarJobSeeker from "./components/JobSeekerPortal/Navbar";
 import Applicants from "./pages/EmployeePortal.tsx/Applicants";
 import Analytics from "./pages/EmployeePortal.tsx/Analytics";
 import BlogPosts from "./pages/EmployeePortal.tsx/BlogPosts";
+import JobPosts from "./pages/EmployeePortal.tsx/JobPosts";
 
 function App() {
   const location = useLocation();
@@ -44,6 +45,7 @@ function App() {
           <Route path="/employeer" element={<Employeer />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/blog-posts" element={<BlogPosts />} />
+          <Route path="/job-posts" element={<JobPosts />} />
         </Routes>
       </div>
       <Footer />
