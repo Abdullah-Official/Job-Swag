@@ -13,6 +13,7 @@ const JobSeeker = () => {
   return (
     <div>
       <div className="bg-primary h-[65vh] flex items-center justify-center rounded-b-[60px]">
+       
         <h3 className="text-white font-[600] text-[40px] -mt-20">Job Seeker</h3>
       </div>
       <div className="md:container flex justify-center -mt-40 mb-20">

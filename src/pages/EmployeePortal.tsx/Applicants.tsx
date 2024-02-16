@@ -12,12 +12,13 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import SortSelect from "@/components/common/SortSelect";
 
 const Applicants = () => {
   return (
     <div className="container my-14 space-y-10">
       <div className="  flex flex-col gap-y-5  justify-center w-full">
-        <h1 className="text-heading ">Applicants</h1>
+        <h1 className="text-heading !text-[24px]">Applicants</h1>
         <div
           style={{ boxShadow: "10px 20px 80px 0px #00000026" }}
           className="bg-white w-full mx-4 md:mx-0  shadow-2xl px-5 py-7 rounded-3xl flex flex-col md:flex-row justify-center   items-center gap-4"
@@ -47,24 +48,7 @@ const Applicants = () => {
         <p className="text-sm text-[#7C7C7C]">
           Showing 05 based on your filter
         </p>
-        <div className="flex gap-3 items-center">
-          <p className="text-sm text-[#7C7C7C] whitespace-nowrap">Sort By</p>
-          <Select>
-              <SelectTrigger className="w-auto md:w-full bg-transparent border-[#C6C6C6] ">
-                <SelectValue placeholder={"Recent Added"} />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectGroup>
-                  <SelectLabel>Fruits</SelectLabel>
-                  <SelectItem value="apple">Apple</SelectItem>
-                  <SelectItem value="banana">Banana</SelectItem>
-                  <SelectItem value="blueberry">Blueberry</SelectItem>
-                  <SelectItem value="grapes">Grapes</SelectItem>
-                  <SelectItem value="pineapple">Pineapple</SelectItem>
-                </SelectGroup>
-              </SelectContent>
-            </Select>
-        </div>
+        <SortSelect />
       </div>
       <div className="flex flex-wrap md:flex-row justify-center md:justify-evenly items-center flex-col gap-x-7 gap-y-5">
         <RecentSearchCard img={Applicant1} />

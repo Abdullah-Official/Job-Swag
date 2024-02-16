@@ -119,9 +119,7 @@ const Navbar = () => {
               <Link className="text-main text-sm" to="/emp-portal">
                 Employee Portal
               </Link>
-              <Link className="text-main text-sm" to="/applicants">
-               Applicants
-              </Link>
+              
             </div>
             <div className="flex gap-x-4">
               <Link to="/login">

@@ -18,6 +18,10 @@ body{
 
 .shadow_dropdown{
   box-shadow: 0px 10px 30px 0px #0000001A;
+}
+
+.side-card{
+  box-shadow: 10px 20px 50px 0px #0000001A;
 
 }
 

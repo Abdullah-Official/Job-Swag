@@ -19,6 +19,8 @@ import Employeer from "./pages/Employeer";
 import EmployeePortalHome from "./pages/EmployeePortal.tsx/EmployeePortalHome";
 import NavbarJobSeeker from "./components/JobSeekerPortal/Navbar";
 import Applicants from "./pages/EmployeePortal.tsx/Applicants";
+import Analytics from "./pages/EmployeePortal.tsx/Analytics";
+import BlogPosts from "./pages/EmployeePortal.tsx/BlogPosts";
 
 function App() {
   const location = useLocation();
@@ -40,6 +42,8 @@ function App() {
           <Route path="/create-acc" element={<CreateAccount />} />
           <Route path="/job-seeker" element={<JobSeeker />} />
           <Route path="/employeer" element={<Employeer />} />
+          <Route path="/analytics" element={<Analytics />} />
+          <Route path="/blog-posts" element={<BlogPosts />} />
         </Routes>
       </div>
       <Footer />
