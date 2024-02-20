@@ -5,6 +5,7 @@
 body{
   background-color: #fafafa;
   overflow-x: hidden !important;
+  font-family: Poppins !important;
 }
 
 .slick-prev , .slick-next{
@@ -55,7 +56,7 @@ body{
 
 @layer utilities {
   .text-heading {
-    @apply text-[1.6rem] md:text-3xl font-bold text-[#1B4C81]; /* Example styles for headings */
+    @apply text-[16px] md:text-3xl font-bold text-[#1B4C81]; /* Example styles for headings */
   }
 }
 

@@ -79,6 +79,9 @@ const Navbar = () => {
                   <Link className="text-main text-sm" to="/emp-portal">
                     Employee Portal
                   </Link>
+                  <Link className="text-main text-sm" to="/jobseeker-portal">
+                    Job Seeker Portal
+                  </Link>
                 </div>
                 <div className="flex gap-4 mt-5">
                   <Link to="/login">
@@ -97,7 +100,7 @@ const Navbar = () => {
             </SheetContent>
           </Sheet>
           <div className=" hidden lg:flex gap-x-10">
-            <div className="flex gap-x-8 items-end   w-full font-medium">
+            <div className="flex gap-x-6 items-end   w-full font-medium">
               <Link className="text-main text-sm" to="/">
                 Home
               </Link>
@@ -121,6 +124,9 @@ const Navbar = () => {
               </Link>
               <Link className="text-main text-sm" to="/emp-portal">
                 Employee Portal
+              </Link>
+              <Link className="text-main text-sm" to="/jobseeker-portal">
+                Job Seeker Portal
               </Link>
             </div>
             <div className="flex gap-x-4">

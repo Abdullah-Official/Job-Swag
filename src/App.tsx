@@ -17,21 +17,23 @@ import CreateAccount from "./pages/CreateAccount";
 import JobSeeker from "./pages/JobSeeker";
 import Employeer from "./pages/Employeer";
 import EmployeePortalHome from "./pages/EmployeePortal.tsx/EmployeePortalHome";
-import NavbarJobSeeker from "./components/JobSeekerPortal/Navbar";
+// import NavbarJobSeeker from "./components/JobSeekerPortal/Navbar";
 import Applicants from "./pages/EmployeePortal.tsx/Applicants";
 import Analytics from "./pages/EmployeePortal.tsx/Analytics";
 import BlogPosts from "./pages/EmployeePortal.tsx/BlogPosts";
 import JobPosts from "./pages/EmployeePortal.tsx/JobPosts";
+import JobSeekerHome from "./pages/JobSeekerPortal.tsx/JobSeekerHome";
 
 function App() {
-  const location = useLocation();
+  // const location = useLocation();
   return (
     <>
-      {location.pathname !== "emp-portal" ? <Navbar /> : <NavbarJobSeeker />}
+      <Navbar />
       <div className="pt-[8rem]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/emp-portal" element={<EmployeePortalHome />} />
+          <Route path="/jobseeker-portal" element={<JobSeekerHome />} />
           <Route path="/applicants" element={<Applicants />} />
           <Route path="/about" element={<About />} />
           <Route path="/how" element={<HowItWorks />} />
