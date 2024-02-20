@@ -23,7 +23,9 @@ const FeatureCard = ({ img }: FeatureCardPropsTypes) => {
           </CardDescription>
         </div>
         <div className="flex justify-between items-center">
-          <p className="text-[#1B4C81] text-sm font-medium ">USD 450 - 750 a month</p>
+          <p className="text-[#1B4C81] text-sm font-medium ">
+            USD 450 - 750 a month
+          </p>
           <p className="text-[#888888]  font-medium text-sm ">DD-MM-YYY</p>
         </div>
         <div className="flex justify-between items-center pt-2">

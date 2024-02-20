@@ -56,7 +56,7 @@ body{
 
 @layer utilities {
   .text-heading {
-    @apply text-[16px] md:text-3xl font-bold text-[#1B4C81]; /* Example styles for headings */
+    @apply text-[16px] md:text-[22px] font-[600] text-[#1B4C81]; /* Example styles for headings */
   }
 }
 

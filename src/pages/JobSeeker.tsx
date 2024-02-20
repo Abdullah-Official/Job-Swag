@@ -19,7 +19,7 @@ const JobSeeker = () => {
       <div className="md:container flex justify-center -mt-40 mb-20">
         <div className="bg-white space-y-10 form_box_shadow rounded-2xl p-7 md:p-12 w-[90%] md:w-[80%]">
           <div className="space-y-3">
-            <h2 className="text-heading !text-2xl">Profile Picture</h2>
+            <h2 className="text-heading">Profile Picture</h2>
             <div className="flex flex-col gap-y-2 sm:flex-row gap-x-4 items-center">
               <img
                 src={PicAvatar}
@@ -38,7 +38,7 @@ const JobSeeker = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-5">
-            <h2 className="text-heading !text-2xl">Contact Information</h2>
+            <h2 className="text-heading">Contact Information</h2>
             <div className="grid grid-cols-12 gap-6 w-full ">
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
@@ -143,7 +143,7 @@ const JobSeeker = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-5">
-            <h2 className="text-heading !text-2xl">
+            <h2 className="text-heading">
               Career Goals & Availability
             </h2>
             <div>
@@ -171,7 +171,7 @@ const JobSeeker = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-3">
-            <h2 className="text-heading !text-2xl">Videos</h2>
+            <h2 className="text-heading">Videos</h2>
             <div className="flex flex-col gap-y-2 sm:flex-row gap-x-4 items-center">
               <img
                 src={VideoOpt}
@@ -190,7 +190,7 @@ const JobSeeker = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-7">
-            <h2 className="text-heading !text-2xl">Looking for</h2>
+            <h2 className="text-heading">Looking for</h2>
             <div className="grid grid-cols-12 md:items-center md:flex-row gap-x-8 gap-y-2">
               <div className="col-span-12 sm:col-span-4  lg:col-span-2">
                 <p className="text-[#474747] font-[500] text-[14px]">
@@ -315,7 +315,7 @@ const JobSeeker = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-5">
-            <h2 className="text-heading !text-2xl">Education Information</h2>
+            <h2 className="text-heading">Education Information</h2>
             <div className="grid grid-cols-12 gap-6 w-full ">
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
@@ -400,7 +400,7 @@ const JobSeeker = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-5">
-            <h2 className="text-heading !text-2xl">Job Experience</h2>
+            <h2 className="text-heading">Job Experience</h2>
             <div className="grid grid-cols-12 gap-6 w-full ">
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
@@ -597,7 +597,7 @@ const JobSeeker = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-5">
-            <h2 className="text-heading !text-2xl">References</h2>
+            <h2 className="text-heading">References</h2>
             <div className="grid grid-cols-12 gap-6 w-full ">
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
@@ -677,7 +677,7 @@ const JobSeeker = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-5">
-            <h2 className="text-heading !text-2xl">Other</h2>
+            <h2 className="text-heading">Other</h2>
             <div className="grid grid-cols-12 gap-6 w-full ">
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
@@ -716,7 +716,7 @@ const JobSeeker = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-5">
-            <h2 className="text-heading !text-2xl">Immigration Status</h2>
+            <h2 className="text-heading">Immigration Status</h2>
             <div className="grid grid-cols-12">
               <div className="col-span-12 md:col-span-6">
                 <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
@@ -738,7 +738,7 @@ const JobSeeker = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-5">
-            <h2 className="text-heading !text-2xl">In The Media</h2>
+            <h2 className="text-heading">In The Media</h2>
             <div className="grid grid-cols-12 gap-6 w-full">
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label

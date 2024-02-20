@@ -1,7 +1,7 @@
 import {
   Routes,
   Route,
-  useLocation,
+  // useLocation,
 } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
@@ -23,6 +23,9 @@ import Analytics from "./pages/EmployeePortal.tsx/Analytics";
 import BlogPosts from "./pages/EmployeePortal.tsx/BlogPosts";
 import JobPosts from "./pages/EmployeePortal.tsx/JobPosts";
 import JobSeekerHome from "./pages/JobSeekerPortal.tsx/JobSeekerHome";
+import MyAccount from "./pages/JobSeekerPortal.tsx/MyAccount";
+import MyResume from "./pages/JobSeekerPortal.tsx/MyResume";
+import JobBlogPost from "./pages/JobSeekerPortal.tsx/JobBlogPost";
 
 function App() {
   // const location = useLocation();
@@ -48,6 +51,9 @@ function App() {
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/blog-posts" element={<BlogPosts />} />
           <Route path="/job-posts" element={<JobPosts />} />
+          <Route path="/my-account" element={<MyAccount />} />
+          <Route path="/my-resume" element={<MyResume />} />
+          <Route path="/blog-post" element={<JobBlogPost />} />
         </Routes>
       </div>
       <Footer />

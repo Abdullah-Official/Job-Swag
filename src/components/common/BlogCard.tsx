@@ -11,30 +11,30 @@ interface BlogCardPropTypes {
 
 const BlogCard = ({ img, editMode }: BlogCardPropTypes) => {
   return (
-    <Card className="w-auto max-w-[350px] px-5 py-6 space-y-7 mx-2 card-boxshadow rounded-xl border-none">
+    <Card className="w-auto max-w-[400px] px-5 py-6 space-y-7 mx-2 card-boxshadow rounded-xl border-none">
       <img
         src={img}
         alt="JobFeature"
         className="object-contain w-full h-auto"
       />
       <div className="space-y-2">
-        <CardTitle className="text-[#1B4C81] text-[22px] font-bold">
+        <CardTitle className="text-[#1B4C81] text-[20px] font-[600]">
           Blog Title Here
         </CardTitle>
         <div>
-          <CardDescription className="text-[#888888]">
+          <CardDescription className="text-[#888888] text-xs">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
           </CardDescription>
         </div>
-        <div className="flex justify-between items-center">
-          <p className="text-main font-400 text-sm ">Author: Alex Thomas</p>
-          <p className="text-main_green text-xs pt-2 font-[600] cursor-pointer ">
+        <div className="flex justify-between items-center pt-1">
+          <p className="text-main font-400 text-xs ">Author: Alex Thomas</p>
+          <p className="text-main_green text-xs  font-[600] cursor-pointer ">
             Follow
           </p>
         </div>
         <div className="flex justify-between items-center pt-2">
-          <p className="text-main font-400 text-sm ">dd-mm-yyyy </p>
+          <p className="text-main font-400 text-xs ">dd-mm-yyyy </p>
           <div className="flex justify-evenly font-medium  gap-x-2">
             <p className="text-main text-xs flex gap-x-1">
               <Eye size={14} strokeWidth={2} /> 109
