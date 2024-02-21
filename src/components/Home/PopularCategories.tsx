@@ -49,8 +49,8 @@ const PopularCategories = () => {
   };
 
   return (
-    <div className=" bg-[#F5F5F5] h-[100vh] hidden lg:flex flex-col justify-center items-center  gap-y-4">
-      <h1 className="text-heading text-center">Popular Categories</h1>
+    <div className=" bg-[#F5F5F5] py-20 hidden lg:flex flex-col justify-center items-center  gap-y-3">
+      <h1 className="text-heading text-[22px] sm:!text-[28px] text-center font-[600]">Popular Categories</h1>
 
       <div className="container">
         <Slider {...settings}>

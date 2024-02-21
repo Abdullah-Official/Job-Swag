@@ -12,8 +12,8 @@ import { Menu } from "lucide-react";
 const Navbar = () => {
   return (
     <div className=" w-full fixed !z-50">
-      <header className="bg-[#1B4C81] p-2 flex items-center justify-center">
-        <p className="text-xs sm:text-sm text-white text-center">
+      <header className="bg-[#1B4C81] p-2.5 flex items-center justify-center">
+        <p className="text-xs sm:text-xs font-[400] text-white text-center">
           Join Our Online Immigration Community For Free &nbsp; | &nbsp; High
           Quality Academic Services &nbsp; | &nbsp; Jaymeous Designs - Brand
           Your Business &nbsp; | &nbsp; BEE A Honey BEE Childrens Book
@@ -76,12 +76,12 @@ const Navbar = () => {
                   <Link className="text-main text-sm" to="/contact">
                     Contact
                   </Link>
-                  <Link className="text-main text-sm" to="/emp-portal">
+                  {/* <Link className="text-main text-sm" to="/emp-portal">
                     Employee Portal
                   </Link>
                   <Link className="text-main text-sm" to="/jobseeker-portal">
                     Job Seeker Portal
-                  </Link>
+                  </Link> */}
                 </div>
                 <div className="flex gap-4 mt-5">
                   <Link to="/login">
@@ -122,20 +122,20 @@ const Navbar = () => {
               <Link className="text-main text-sm" to="/contact">
                 Contact
               </Link>
-              <Link className="text-main text-sm" to="/emp-portal">
+              {/* <Link className="text-main text-sm" to="/emp-portal">
                 Employee Portal
               </Link>
               <Link className="text-main text-sm" to="/jobseeker-portal">
                 Job Seeker Portal
-              </Link>
+              </Link> */}
             </div>
-            <div className="flex gap-x-4">
+            <div className="flex gap-x-3">
               <Link to="/login">
                 <Button
                   className="text-main_green hover:text-main_green"
                   variant="outline"
                 >
-                  Login
+                  Log In
                 </Button>
               </Link>
               <Link to={"/create-acc"}>
