@@ -20,14 +20,14 @@ const About = () => {
               />
             </div>
             <div className="w-full p-4 flex flex-col justify-center gap-y-4">
-              <div className="space-y-2">
-                <h3 className="text-heading">How It All Began</h3>
-                <p className="text-main_green font-[400] text-[18px]">
+              <div className="space-y-1">
+                <h3 className="text-heading !font-[600] !text-[24px]">How It All Began</h3>
+                <p className="text-main_green font-[400] text-[15px]">
                   We posted only one job..
                 </p>
               </div>
               <div>
-                <p className="text-[#888888] text-[16px]">
+                <p className="text-[#888888] text-[15px] leading-loose">
                   The costs mounted to hundreds of dollars extremely fast. That
                   was the moment we decided to make a difference and lower these
                   unnecessary high costs for everyone. Analyzing other websites’
@@ -46,11 +46,11 @@ const About = () => {
               />
             </div>
             <div className="w-full p-4 flex flex-col justify-center gap-y-4">
-              <div className="space-y-2">
-                <h3 className="text-heading">Why choose JobsSwag?</h3>
+              <div className="space-y-1">
+                <h3 className="text-heading !font-[600] !text-[24px]">Why choose JobsSwag?</h3>
               </div>
               <div>
-                <p className="text-[#888888] text-[16px]">
+                <p className="text-[#888888] text-[15px] leading-loose">
                   While JobsSwag.com’s price remains $49.99 no matter how many
                   jobs you post for an entire year, on other websites the cost
                   is for only one job posting and for only 30 days. Analyzing
@@ -65,15 +65,15 @@ const About = () => {
               <img
                 src={AboutCta}
                 alt="About CTA"
-                className="object-contain h-[300px] md:h-[445px] -mt-28 "
+                className="object-contain h-[300px] md:h-[445px] mt-[-6rem] "
               />
             </div>
             <div className="w-full p-4 flex flex-col justify-center gap-y-4">
-              <div className="space-y-2">
-                <h3 className="text-heading">Who Are We?</h3>
+              <div className="space-y-1">
+                <h3 className="text-heading !font-[600] !text-[24px]">Who Are We?</h3>
               </div>
               <div>
-                <p className="text-[#888888] text-[16px] md:mr-20">
+                <p className="text-[#888888] text-[15px] leading-loose md:mr-20">
                   JobsSwag.com is the solution to the unnecessary high cost of
                   posting jobs and hiring employees. We are up to 100 times more
                   affordable per single job post, per month. Imagine the savings
@@ -91,14 +91,14 @@ const About = () => {
               />
             </div>
             <div className="w-full p-4 flex flex-col justify-center gap-y-4">
-              <div className="space-y-2">
-                <h3 className="text-heading">Who Do We Serve?</h3>
-                <p className="text-main_green font-[400] text-[18px]">
+              <div className="space-y-1">
+                <h3 className="text-heading !font-[600] !text-[24px]">Who Do We Serve?</h3>
+                <p className="text-main_green font-[400] text-[15px]">
                   We serve you!
                 </p>
               </div>
               <div>
-                <p className="text-[#888888] text-[16px]">
+                <p className="text-[#888888] text-[15px] leading-loose">
                   We are dedicated to promoting your career as a job seeker
                   and/or your company, business, or institution as an employer.
                   JobsSwag.com is about you!

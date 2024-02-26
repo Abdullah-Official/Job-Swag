@@ -9,7 +9,7 @@ const RecentBlogs = () => {
   return (
     <div className="container">
       <h1 className="text-heading text-[22px] sm:!text-[28px] text-center font-[600]">
-        Recent Blogs
+      Recent Blog Posts
       </h1>
       <div className="mt-6 flex flex-col items-center justify-center gap-y-6">
         <div className="flex flex-wrap md:flex-row justify-center flex-col gap-x-7 gap-y-5">

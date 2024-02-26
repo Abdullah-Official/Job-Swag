@@ -8,10 +8,10 @@ const HowItWorks = () => {
   return (
     <div className="mb-20 -mt-1">
       <CommonHeader title="How It Works" bannerImg={Banner} />
-      <div className="md:container mt-16 space-y-10">
+      <div className="md:container mt-16 space-y-12">
         <div className="text-center space-y-4">
           <h3 className="text-heading">How Do We Do It?</h3>
-          <p className="text-[#888888] font-[400] text-[18px]">
+          <p className="text-[#888888] font-[400] text-[15px]">
             The services on JobsSwag.com are offered to three groups of possible
             users:
           </p>
@@ -31,40 +31,40 @@ const HowItWorks = () => {
               </div>
               <div>
                 <ul className="list-disc list-outside space-y-2 md:ml-3 !text-main_green">
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       You pay only $49.99 per year.
                     </span>
                   </li>
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       You enjoy unlimited job postings.
                     </span>
                   </li>
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       You enjoy unlimited applicant resumes/CVs receives.
                     </span>
                   </li>
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       You enjoy unlimited access to job seekers’ profiles.
                     </span>
                   </li>
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       You create a profile to promote yourself that includes
                       your logo, links to your website pages, a description of
                       your business, & much more.
                     </span>
                   </li>
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       Be matched with job seekers that meet your needs.
                     </span>
                   </li>
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       Enjoy analytical data about your job posts.
                     </span>
                   </li>
@@ -86,43 +86,43 @@ const HowItWorks = () => {
               </div>
               <div>
                 <ul className="list-disc list-outside md:ml-3 space-y-2 !text-main_green">
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       JobsSwag.com is completely FREE for job seekers.
                     </span>
                   </li>
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       Search for job using our extremely advanced search engine.
                     </span>
                   </li>
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       Apply to unlimited jobs.
                     </span>
                   </li>
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       Create a profile that represents you the best.
                     </span>
                   </li>
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       Upload your resume and/or CV (both are recommended).
                     </span>
                   </li>
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       Use JobsSwag.com to create a resume or CV.
                     </span>
                   </li>
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       Invite employers to notice you.
                     </span>
                   </li>
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       Enjoy analytics about your profile viewers.
                     </span>
                   </li>
@@ -144,44 +144,44 @@ const HowItWorks = () => {
               </div>
               <div>
                 <ul className="list-disc list-outside md:ml-3 space-y-2 !text-main_green">
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       You can create professional content.
                     </span>
                   </li>
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       You can promote yourself.
                     </span>
                   </li>
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       You can sell your services.
                     </span>
                   </li>
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       Bronze influencers (content creators) pay $49.99/month.
                     </span>
                   </li>
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       Silver influencers (content creators) pay $150/month.
                     </span>
                   </li>
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       Gold influencers (content creators) pay $300/month.
                     </span>
                   </li>
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       Platinum (unlimited) influencers (content creators) pay
                       $450/month.
                     </span>
                   </li>
-                  <li className="ml-1 text-[16px]">
-                    <span className="text-[#888888]">
+                  <li className="ml-1 text-[14px]">
+                    <span className="text-[#888888] font-[400]">
                       Anyone can be an influencer.
                     </span>
                   </li>

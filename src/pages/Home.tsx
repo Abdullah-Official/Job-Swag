@@ -20,7 +20,9 @@ export default function Home() {
         <FeaturedInfluencers />
         <RecentBlogs />
         <AdSection />
+        <div className="my-10">
         <PartnersCarousel />
+        </div>
       </div>
     </div>
   );

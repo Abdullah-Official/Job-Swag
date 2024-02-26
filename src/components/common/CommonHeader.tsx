@@ -11,13 +11,13 @@ const CommonHeader = ({title, bannerImg}: CommonHeaderProps) => {
     className={`hidden md:flex items-center justify-center bg-no-repeat bg-center bg-cover h-[65vh] common-header`}
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
-        <h3 className="text-white font-[600] text-[40px]">{title}</h3>
+        <h3 className="text-white header_text font-[600] text-[40px]">{title}</h3>
     </section>
     <section
     className={` md:hidden flex items-center justify-center bg-no-repeat bg-center bg-cover h-[400px] `}
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
-        <h3 className="text-white font-[600] text-[40px]">{title}</h3>
+        <h3 className="text-white header_text font-[600] text-[40px]">{title}</h3>
     </section>
    </>
   )

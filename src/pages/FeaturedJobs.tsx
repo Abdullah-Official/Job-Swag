@@ -67,11 +67,11 @@ const FeatureJobs = () => {
         </div>
       </div>
 
-      <div className="md:container mt-16 space-y-16 ">
-        <div className="flex gap-4 flex-col md:flex-row container justify-center">
+      <div className="md:container mt-16 space-y-16 flex flex-col items-center ">
+        <div className="flex gap-4 flex-col md:flex-row  w-[94%]  justify-center">
           {selectsArr.map((v, i) => (
             <Select key={i}>
-              <SelectTrigger className="w-auto border-[#C6C6C6] ">
+              <SelectTrigger className="border-[#C6C6C6] ">
                 <SelectValue placeholder={v} />
               </SelectTrigger>
               <SelectContent>
@@ -95,7 +95,7 @@ const FeatureJobs = () => {
           <FeatureCard img={JobFeature2} />
           <FeatureCard img={JobFeature3} />
         </div>
-        <div>
+        <div className="w-full">
           <AdSection />
         </div>
         <div>

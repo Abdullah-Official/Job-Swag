@@ -12,9 +12,9 @@ const Contact = () => {
       <CommonHeader title="Contact Us" bannerImg={Banner} />
       <div className="md:container mt-16 ">
         <div className="flex flex-wrap justify-center items-center flex-col   gap-x-7 gap-y-10">
-          <div className="text-center space-y-3 mx-4">
-            <h1 className="text-heading">Fill the form!</h1>
-            <p className="text-[#888888] text-[16px]">
+          <div className="text-center space-y-5 mx-4">
+            <h1 className="text-heading !text-[26px] !font-[600]">Fill the form!</h1>
+            <p className="text-[#888888] font-[400] text-[14px]">
               There are many ways to donate! We appreciate your support!
             </p>
           </div>
@@ -72,7 +72,7 @@ const Contact = () => {
                 />
                 <Label
                   htmlFor="terms"
-                  className="text-[#4E4E4E] font-[450] text-[14px]"
+                  className="text-[#4E4E4E] font-[400] text-[14px] pl-1"
                 >
                   I agree to terms & conditions provided by the company. By
                   providing my phone number, I agree to receive text messages

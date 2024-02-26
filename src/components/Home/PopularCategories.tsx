@@ -2,7 +2,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AnimalCat from "@/assets/images/animal_category.png";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { MoveLeft, MoveRight } from "lucide-react";
+
 
 const PopularCategories = () => {
   const settings = {
@@ -12,8 +13,8 @@ const PopularCategories = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     variableHeight: true,
-    prevArrow: <ArrowLeft color="white" />,
-    nextArrow: <ArrowRight color="white" />,
+    prevArrow: <MoveLeft color="white" size={0} />,
+    nextArrow: <MoveRight color="white" size={0} />,
     responsive: [
       {
         breakpoint: 1024,
@@ -44,7 +45,7 @@ const PopularCategories = () => {
       },
     ],
     customPaging: () => (
-      <div className={`bg-primary rounded-full w-2 h-2`}></div>
+      <div className={`bg-primary rounded-full w-2.5 h-2.5 mt-4 `}></div>
     ),
   };
 
@@ -57,11 +58,11 @@ const PopularCategories = () => {
           {/* First Slide */}
           <div className="space-y-3 h-auto py-5">
             {Array.from({ length: 3 }).map((_, ind) => (
-              <div key={ind} className="flex justify-center gap-x-2">
+              <div key={ind} className="flex justify-center gap-4">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <div
                     key={i}
-                    className="bg-white w-[180px] h-[120px] shadow-lg rounded-md font-[400] py-3 flex items-center"
+                    className="bg-white w-[180px] h-[120px] partner_card mb-2 rounded-md font-[400] py-3 flex items-center"
                   >
                     <div className="flex flex-col gap-y-3  px-5 ">
                       <img
@@ -84,11 +85,11 @@ const PopularCategories = () => {
           {/* Second Slide */}
           <div className="space-y-3 h-auto py-5">
             {Array.from({ length: 3 }).map((_, ind) => (
-              <div key={ind} className="flex justify-center gap-x-2">
+              <div key={ind} className="flex justify-center gap-4">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <div
                     key={i}
-                    className="bg-white w-[180px] h-[120px] shadow-lg rounded-md font-[400] py-3 flex items-center"
+                    className="bg-white w-[180px] h-[120px] partner_card mb-2 rounded-md font-[400] py-3 flex items-center"
                   >
                     <div className="flex flex-col gap-y-3  px-5 ">
                       <img
