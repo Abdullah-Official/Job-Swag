@@ -12,7 +12,7 @@ const FeaturedJobs = () => {
         Featured Jobs
       </h1>
       <div className="mt-6 flex flex-col  gap-y-6">
-        <div className="flex flex-wrap md:flex-row  md:justify-evenly flex-col gap-x-7 gap-y-5">
+        <div className="flex md:flex-row items-center  md:justify-evenly flex-col gap-x-7 gap-y-5">
           <FeatureCard img={JobFeature} />
           <FeatureCard img={JobFeature2} />
           <FeatureCard img={JobFeature3} />

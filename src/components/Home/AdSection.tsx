@@ -5,7 +5,7 @@ import Ad3 from "@/assets/images/ad3.png";
 const AdSection = () => {
   return (
     <div className="container my-10">
-      <div className="flex flex-wrap md:flex-row sm:justify-evenly gap-y-5 justify-center flex-col gap-x-2 ">
+      <div className="flex md:flex-row sm:justify-between gap-y-5 justify-center flex-col gap-x-7">
         <div>
           <img
             src={Ad1}

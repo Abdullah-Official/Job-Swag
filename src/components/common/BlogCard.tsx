@@ -11,7 +11,7 @@ interface BlogCardPropTypes {
 
 const BlogCard = ({ img, editMode }: BlogCardPropTypes) => {
   return (
-    <Card className="w-auto max-w-[400px] px-5 py-6 space-y-7 mx-2 card-boxshadow rounded-xl border-none">
+    <Card className="w-auto max-w-[400px] px-5 py-6 space-y-7 lg:mx-2 card-boxshadow rounded-xl border-none">
       <img
         src={img}
         alt="JobFeature"
@@ -33,8 +33,8 @@ const BlogCard = ({ img, editMode }: BlogCardPropTypes) => {
             Follow
           </p>
         </div>
-        <div className="flex justify-between items-center pt-2">
-          <p className="text-main text-sm font-[400] ">dd-mm-yyyy </p>
+        <div className="flex gap-3 flex-col lg:flex-row justify-between md:items-center pt-2">
+          <p className="text-main text-sm text-center md:text-left font-[400] truncate ">dd-mm-yyyy </p>
           <div className="flex justify-evenly font-medium  gap-x-2">
             <p className="text-main text-sm font-[500] flex gap-x-1">
               <Eye size={17} strokeWidth={2} /> 109

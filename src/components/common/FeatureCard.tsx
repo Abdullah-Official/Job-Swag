@@ -8,7 +8,7 @@ interface FeatureCardPropsTypes {
 
 const FeatureCard = ({ img }: FeatureCardPropsTypes) => {
   return (
-    <Card className="w-auto max-w-[400px] px-5 py-6 space-y-5 mx-2 card-boxshadow rounded-xl border-none">
+    <Card className="w-auto max-w-[400px] px-5 py-6 space-y-5 lg:mx-2 card-boxshadow rounded-xl border-none">
       <img src={img} alt="JobFeature" className="object-contain w-full" />
       <div className="space-y-2">
         <CardTitle className="text-[#1B4C81] text-[22px] font-[600]">

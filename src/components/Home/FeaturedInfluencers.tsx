@@ -12,7 +12,7 @@ const FeaturedInfluencers = () => {
           Featured Influencers
         </h1>
         <div className="mt-6 flex flex-col  gap-y-6">
-          <div className="flex flex-wrap md:flex-row  md:justify-evenly mt-4 flex-col gap-x-7 gap-y-5">
+          <div className="flex md:flex-row items-center  md:justify-evenly mt-4 flex-col gap-x-7 gap-y-5">
             <InfluencerCard img={Influencer1} />
             <InfluencerCard img={Influencer2} />
             <InfluencerCard img={Influencer3} />

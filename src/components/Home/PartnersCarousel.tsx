@@ -21,9 +21,21 @@ const PartnersCarousel = () => {
     nextArrow: <ArrowRight color="white" />,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1120,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 840,
         settings: {
           slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 740,
+        settings: {
+          slidesToShow: 2,
         },
       },
       {

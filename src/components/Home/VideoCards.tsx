@@ -6,7 +6,7 @@ import PostJobIcon from "@/assets/images/post-job-icon.png";
 
 export const VideoCards = () => {
   return (
-    <div className=" flex flex-col flex-wrap items-center justify-center container w-full gap-6 lg:flex-row ">
+    <div className=" flex flex-col items-center justify-center container w-full gap-6 lg:flex-row ">
       <div>
         <img
           src={VideoElement}

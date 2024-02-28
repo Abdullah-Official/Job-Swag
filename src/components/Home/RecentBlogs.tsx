@@ -12,7 +12,7 @@ const RecentBlogs = () => {
       Recent Blog Posts
       </h1>
       <div className="mt-6 flex flex-col items-center justify-center gap-y-6">
-        <div className="flex flex-wrap md:flex-row justify-center flex-col gap-x-7 gap-y-5">
+        <div className="flex md:flex-row justify-center flex-col gap-x-7 gap-y-5">
           <BlogCard img={BlogImg3} />
           <BlogCard img={BlogImg} />
           <BlogCard img={BlogImg2} />
