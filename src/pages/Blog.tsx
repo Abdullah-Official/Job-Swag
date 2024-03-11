@@ -7,19 +7,18 @@ import BlogImg3 from "@/assets/images/blog-img3.png";
 
 const Blog = () => {
   return (
-    <div className="mb-20 -mt-1">
+    <div className="mb-20 -mt-1 ">
       <CommonHeader title="Blog" bannerImg={Banner} />
       <div className="md:container mt-16 ">
-        <div className="flex flex-wrap md:flex-row justify-center items-center flex-col   gap-x-7 gap-y-5">
-          <BlogCard img={BlogImg} />
-          <BlogCard img={BlogImg2} />
-          <BlogCard img={BlogImg3} />
-          <BlogCard img={BlogImg} />
-          <BlogCard img={BlogImg2} />
-          <BlogCard img={BlogImg3} />
-          <BlogCard img={BlogImg} />
-          <BlogCard img={BlogImg2} />
-          <BlogCard img={BlogImg3} />
+      <div className="flex items-center justify-center">
+          <div className="grid grid-cols-1 gap-y-6 md:grid-cols-2 justify-center items-center gap-x-4 lg:grid-cols-3 ">
+            <BlogCard img={BlogImg3} />
+            <BlogCard img={BlogImg} />
+            <BlogCard img={BlogImg2} />
+            <BlogCard img={BlogImg3} />
+            <BlogCard img={BlogImg} />
+            <BlogCard img={BlogImg2} />
+          </div>
         </div>
       </div>
     </div>

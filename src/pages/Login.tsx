@@ -8,20 +8,24 @@ const Login = () => {
   return (
     <div className="mb-20 flex flex-col md:flex-row">
       <div className="md:w-[65%] lg:w-[75%] w-full">
-        <img src={LoginBg} className="w-full md:w-[90%]" alt="" />
+        <img
+          src={LoginBg}
+          className="w-full md:w-[90%] 2xl:h-[948px] "
+          alt=""
+        />
       </div>
-      <div className="flex justify-center md:-ml-60">
-        <div className="bg-white w-[550px] h-fit mt-20 mx-4 md:mx-0 form_box_shadow flex flex-col gap-y-5 rounded-[30px] p-7  md:p-12  ">
+      <div className="flex justify-center md:-ml-60 2xl:-ml-96 2xl:mt-20">
+        <div className="bg-white w-[550px] 2xl:w-[742px] h-fit mt-20 mx-4 md:mx-0 form_box_shadow flex flex-col gap-y-5 rounded-[30px] p-7  md:p-12  ">
           <div>
-            <h1 className="text-heading">Log In</h1>
-            <p className="text-[#888888] text-[14px] pt-3">
+            <h1 className="text-heading 2xl:!text-[50px]">Log In</h1>
+            <p className="text-[#888888] text-[14px]  2xl:text-[18px] pt-3">
               Lorem ipsum dolor sit amet consectetur adipiscing
             </p>
           </div>
           <div className="grid grid-cols-12 gap-6 w-full ">
             <div className="flex flex-col gap-2 col-span-12  ">
               <Label
-                className="text-[#4E4E4E] font-[450] text-[14px]"
+                className="text-[#4E4E4E] font-[400] 2xl:text-[18px] text-[14px]"
                 htmlFor="email"
               >
                 Email Address
@@ -35,7 +39,7 @@ const Login = () => {
             </div>
             <div className="flex flex-col gap-2 col-span-12 ">
               <Label
-                className="text-[#4E4E4E] font-[450] text-[14px]"
+                className="text-[#4E4E4E] font-[400] 2xl:text-[18px] text-[14px]"
                 htmlFor="password"
               >
                 Password
@@ -67,8 +71,8 @@ const Login = () => {
             </div>
           </div>
           <div className="flex justify-center flex-col gap-y-6 items-center mt-5 w-full ">
-            <Button className="w-full ">Log In</Button>
-            <p className="text-[#7C7C7C] text-md font-[450]">
+            <Button className="w-full 2xl:py-6 2xl:text-[18px]">Log In</Button>
+            <p className="text-[#7C7C7C] text-md 2xl:!text-[16px] font-[400]">
               Don’t have an account,{" "}
               <span className="text-main_green"> Create Account</span>
             </p>

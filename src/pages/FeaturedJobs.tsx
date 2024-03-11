@@ -7,6 +7,7 @@ import FeatureCard from "@/components/common/FeatureCard";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { MapPin, SearchIcon } from "lucide-react";
+import PartnersCarousel from "@/components/Home/PartnersCarousel";
 import {
   Select,
   SelectContent,
@@ -17,7 +18,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import AdSection from "@/components/Home/AdSection";
-import PartnersCarousel from "@/components/Home/PartnersCarousel";
 
 const FeatureJobs = () => {
   const selectsArr = [
@@ -33,11 +33,12 @@ const FeatureJobs = () => {
   return (
     <div className="mb-20 -mt-1">
       <CommonHeader title="Featured Jobs" bannerImg={Banner} />
-      <div className="flex justify-center w-full">
-        <div className="-mt-10 w-full flex justify-center">
+      <div className="container mx-auto 2xl:w-[1600px]">
+      <div className="flex justify-center w-full ">
+        <div className="-mt-10 w-full flex justify-center ">
           <div
             style={{ boxShadow: "10px 20px 80px 0px #00000026" }}
-            className="bg-white w-full mx-4 md:mx-0 md:w-[65%] shadow-2xl px-5 py-7 rounded-3xl flex flex-col md:flex-row  items-center gap-4"
+            className="bg-white w-full  md:mx-0 md:w-[65%] shadow-2xl px-5 py-7 rounded-3xl flex flex-col md:flex-row  items-center gap-4"
           >
             <div className="relative w-full">
               <SearchIcon
@@ -67,11 +68,11 @@ const FeatureJobs = () => {
         </div>
       </div>
 
-      <div className="md:container mt-16 space-y-16 flex flex-col items-center ">
-        <div className="flex gap-4 flex-col md:flex-row  w-[94%]  justify-center">
+      <div className=" mt-16 space-y-16 flex flex-col items-center  ">
+        <div className="flex gap-4 flex-col md:flex-row w-full justify-center">
           {selectsArr.map((v, i) => (
-            <Select key={i}>
-              <SelectTrigger className="border-[#C6C6C6] ">
+            <Select  key={i}>
+              <SelectTrigger className="border-[#C6C6C6] w-full xl:w-fit xl:px-10 ">
                 <SelectValue placeholder={v} />
               </SelectTrigger>
               <SelectContent>
@@ -87,21 +88,25 @@ const FeatureJobs = () => {
             </Select>
           ))}
         </div>
-        <div className="flex flex-wrap md:flex-row justify-center items-center flex-col  gap-x-4 gap-y-5">
-          <FeatureCard img={JobFeature} />
-          <FeatureCard img={JobFeature2} />
-          <FeatureCard img={JobFeature3} />
-          <FeatureCard img={JobFeature} />
-          <FeatureCard img={JobFeature2} />
-          <FeatureCard img={JobFeature3} />
+        <div className="flex items-center justify-center">
+          <div className="grid grid-cols-1 items-center gap-9 md:grid-cols-2 justify-center  lg:grid-cols-3 w-full">
+            <FeatureCard img={JobFeature} />
+            <FeatureCard img={JobFeature2} />
+            <FeatureCard img={JobFeature3} />
+            <FeatureCard img={JobFeature} />
+            <FeatureCard img={JobFeature2} />
+            <FeatureCard img={JobFeature3} />
+          </div>
         </div>
         <div className="w-full">
           <AdSection />
         </div>
-        <div>
-          <PartnersCarousel />
-        </div>
       </div>
+      </div>
+    <div className="my-10">
+    <PartnersCarousel />
+    </div>
+
     </div>
   );
 };

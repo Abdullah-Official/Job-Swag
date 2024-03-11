@@ -13,8 +13,8 @@ const Advertise = () => {
   return (
     <div className="mb-20 -mt-1">
       <CommonHeader title="Advertise" bannerImg={Banner} />
-      <div className="md:container mt-16">
-        <div className="container w-full space-y-5 sm:space-y-10">
+      <div className="mx-auto my-28 2xl:w-[1600px] ">
+        <div className="container  w-full space-y-5 sm:space-y-20">
           <CommonGrid
             img={BlogImg}
             heading="Blog Posts"
@@ -32,8 +32,8 @@ const Advertise = () => {
           />
         </div>
       </div>
-      <div className="bg-[#f5f5f5] py-20 mt-16">
-        <div className="container w-full space-y-5 sm:space-y-10">
+      <div className="bg-[#f5f5f5] py-20 mt-20">
+        <div className="container mx-auto my-28 2xl:w-[1600px] w-full space-y-5 sm:space-y-20">
           <CommonGrid
             img={TickerImg}
             heading="News Ticker"
@@ -58,8 +58,8 @@ const Advertise = () => {
           />
         </div>
       </div>
-      <div className="md:container mt-16">
-        <div className="container w-full space-y-5 sm:space-y-10">
+      <div className="mx-auto my-28 2xl:w-[1600px] mt-20">
+        <div className="container w-full space-y-5 sm:space-y-20">
           <CommonGrid
             img={VideoImg}
             heading="Home Page Featured Video"

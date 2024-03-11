@@ -19,7 +19,7 @@ const CommonGrid = ({
 }: CommonGridPropsType) => {
   return (
     <div
-      className={`flex flex-col gap-x-2 ${
+      className={`flex flex-col gap-x-8 ${
         reverseRow ? "md:flex-row-reverse" : "md:flex-row"
       } `}
     >
@@ -27,18 +27,18 @@ const CommonGrid = ({
         <img
           src={img}
           alt={img}
-          className="object-contain w-full  !rounded-3xl"
+          className=" w-full 2xl:h-[588px]  !rounded-3xl"
         />
       </div>
       <div className="w-full p-4 flex flex-col justify-center gap-y-4">
         <div className="space-y-2">
-          <h3 className="text-heading !text-[25px] md:!text-[28px] !font-[600]">{heading}</h3>
-          <p className="text-main_green font-[600] text-[14px] md:text-[17px]">
+          <h3 className="text-heading !text-[25px] md:!text-[28px] 2xl:!text-[45px] !font-[600]">{heading}</h3>
+          <p className="text-main_green font-[600] 2xl:!text-[30px] text-[14px] md:text-[17px]">
             {tagline}
           </p>
         </div>
         <div>
-          <p className="text-[#888888] text-[13px] leading-loose font-[400] md:text-[14px]">{text}</p>
+          <p className="text-[#888888] text-[13px] leading-loose font-[400] 2xl:text-[20px] md:text-[14px]">{text}</p>
         </div>
         {btnTxt ? (
           <Button className="bg-primary w-[120px]  font-[400]">

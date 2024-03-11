@@ -16,15 +16,15 @@ const CreateAccount = () => {
       <div className="md:w-[65%] lg:w-[75%] w-full">
         <img
           src={CreateAccBg}
-          className="w-full md:w-[90%] rounded-br-[80px] rounded-tr-[80px]"
+          className="w-full md:w-[90%] rounded-br-[80px] rounded-tr-[80px] 2xl:h-[948px]"
           alt=""
         />
       </div>
-      <div className="flex justify-center md:-ml-60">
-        <div className="bg-white w-full md:w-fit lg:w-[550px] h-fit mt-20 mx-4 md:mx-0 form_box_shadow flex flex-col gap-y-5 rounded-[30px] p-7  md:p-12  ">
+      <div className="flex justify-center md:-ml-60 2xl:-ml-96 2xl:mt-20">
+        <div className="bg-white w-full md:w-fit lg:w-[550px] 2xl:w-[742px] h-fit mt-20 mx-4 md:mx-0 form_box_shadow flex flex-col gap-y-12 rounded-[30px] p-7  md:p-12  ">
           <div>
-            <h1 className="text-heading">Create Account</h1>
-            <p className="text-[#888888] text-[14px] pt-3">
+            <h1 className="text-heading 2xl:!text-[50px]">Create Account</h1>
+            <p className="text-[#888888] text-[14px] 2xl:text-[18px] pt-3">
               Lorem ipsum dolor sit amet consectetur adipiscing
             </p>
           </div>
@@ -47,10 +47,10 @@ const CreateAccount = () => {
               <div className="flex  gap-x-4 items-center">
                 <img
                   src={JobSeeker}
-                  className="w-[50px] object-contain h-[40px]"
+                  className="w-[60px] object-contain h-[55px]"
                   alt="JobSeeker"
                 />
-                <p className="text-[#5D6A7B] font-[500] text-[17px]">
+                <p className="text-[#5D6A7B] font-[500] text-[17px] 2xl:text-[22px]">
                   Job Seeker
                 </p>
               </div>
@@ -72,10 +72,10 @@ const CreateAccount = () => {
               <div className="flex  gap-x-4 items-center">
                 <img
                   src={Employeer}
-                  className="w-[50px] object-contain h-[40px]"
+                  className="w-[60px] object-contain h-[55px]"
                   alt="Employeer"
                 />
-                <p className="text-[#5D6A7B] font-[500] text-[17px]">
+                <p className="text-[#5D6A7B] font-[500] text-[17px] 2xl:text-[22px]">
                   Employeer
                 </p>
               </div>
@@ -97,20 +97,23 @@ const CreateAccount = () => {
               <div className="flex  gap-x-4 items-center">
                 <img
                   src={Influencer}
-                  className="w-[50px] object-contain h-[40px]"
+                  className="w-[60px] object-contain h-[55px]"
                   alt="Influencer"
                 />
-                <p className="text-[#5D6A7B] font-[500] text-[17px]">
+                <p className="text-[#5D6A7B] font-[500] text-[17px] 2xl:text-[22px]">
                   Influencer
                 </p>
               </div>
             </label>
           </div>
-          <div className="flex justify-center flex-col gap-y-6 items-center mt-5 w-full ">
-            <Button onClick={() => navigate(`/${accType}`)} className="w-full ">
+          <div className="flex justify-center flex-col gap-y-6 items-center w-full ">
+            <Button
+              onClick={() => navigate(`/${accType}`)}
+              className="w-full py-6 2xl:text-[18px] "
+            >
               Continue
             </Button>
-            <p className="text-[#7C7C7C] text-md font-[450]">
+            <p className="text-[#7C7C7C] text-md 2xl:!text-[16px] font-[400]">
               Already have an account,
               <span className="text-main_green"> Log In</span>
             </p>

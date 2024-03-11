@@ -12,15 +12,15 @@ import { Menu } from "lucide-react";
 const Navbar = () => {
   return (
     <div className=" w-full fixed !z-50">
-      <header className="bg-[#1B4C81] p-2.5 flex items-center justify-center">
-        <p className="text-xs sm:text-xs font-[400] text-white text-center">
+      <header className="bg-[#1B4C81] p-2.5 2xl:p-4 flex items-center justify-center">
+        <p className="text-xs sm:text-xs font-[400] 2xl:text-[18px] text-white 2xl:w-[1600px] text-center">
           Join Our Online Immigration Community For Free &nbsp; | &nbsp; High
           Quality Academic Services &nbsp; | &nbsp; Jaymeous Designs - Brand
           Your Business &nbsp; | &nbsp; BEE A Honey BEE Childrens Book
         </p>
       </header>
-      <nav className="p-5 bg-white ">
-        <div className="container md:px-12 flex justify-between gap-x-3 items-center">
+      <nav className="p-5 py-6 bg-white ">
+        <div className="container 2xl:w-[1600px] mx-auto  flex justify-between gap-x-3 items-center">
           <div>
             <Link to={"/"}>
               <img
@@ -28,7 +28,7 @@ const Navbar = () => {
                 width={150}
                 height={150}
                 alt="job_swag_logo"
-                className="object-contain"
+                className="object-contain 2xl:w-[256px]"
               />
             </Link>
           </div>
@@ -101,25 +101,25 @@ const Navbar = () => {
           </Sheet>
           <div className=" hidden lg:flex gap-x-10">
             <div className="flex gap-x-6 items-end   w-full font-medium">
-              <Link className="text-main text-sm" to="/">
+              <Link className="text-main text-sm 2xl:text-[20px] font-[500]" to="/">
                 Home
               </Link>
-              <Link className="text-main text-sm" to="/about">
+              <Link className="text-main text-sm 2xl:text-[20px] font-[500]" to="/about">
                 About
               </Link>
-              <Link className="text-main text-sm" to="/how">
+              <Link className="text-main text-sm 2xl:text-[20px] font-[500]" to="/how">
                 How It Works
               </Link>
-              <Link className="text-main text-sm" to="/featured-jobs">
+              <Link className="text-main text-sm 2xl:text-[20px] font-[500]" to="/featured-jobs">
                 Featured Jobs
               </Link>
-              <Link className="text-main text-sm" to="/advertise">
+              <Link className="text-main text-sm 2xl:text-[20px] font-[500]" to="/advertise">
                 Advertise
               </Link>
-              <Link className="text-main text-sm" to="/blog">
+              <Link className="text-main text-sm 2xl:text-[20px] font-[500]" to="/blog">
                 Blog
               </Link>
-              <Link className="text-main text-sm" to="/contact">
+              <Link className="text-main text-sm 2xl:text-[20px] font-[500]" to="/contact">
                 Contact
               </Link>
               {/* <Link className="text-main text-sm" to="/emp-portal">
@@ -129,17 +129,17 @@ const Navbar = () => {
                 Job Seeker Portal
               </Link> */}
             </div>
-            <div className="flex gap-x-3">
+            <div className="flex gap-x-4">
               <Link to="/login">
                 <Button
-                  className="text-main_green hover:text-main_green"
+                  className="text-main_green hover:text-main_green 2xl:text-[16px] 2xl:py-5"
                   variant="outline"
                 >
                   Log In
                 </Button>
               </Link>
               <Link to={"/create-acc"}>
-                <Button>Create Account</Button>
+                <Button className="2xl:text-[16px] 2xl:py-5 px-4">Create Account</Button>
               </Link>
             </div>
           </div>

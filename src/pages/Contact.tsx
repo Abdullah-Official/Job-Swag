@@ -12,17 +12,17 @@ const Contact = () => {
       <CommonHeader title="Contact Us" bannerImg={Banner} />
       <div className="md:container mt-16 ">
         <div className="flex flex-wrap justify-center items-center flex-col   gap-x-7 gap-y-10">
-          <div className="text-center space-y-5 mx-4">
-            <h1 className="text-heading !text-[26px] !font-[600]">Fill the form!</h1>
-            <p className="text-[#888888] font-[400] text-[14px]">
+          <div className="text-center space-y-4 mx-4">
+            <h1 className="text-heading !text-[26px] !font-[600] 2xl:!text-[50px]">Fill the form!</h1>
+            <p className="text-[#888888] font-[400] text-[14px] xl:text-[18px] 2xl:text-[22px]">
               There are many ways to donate! We appreciate your support!
             </p>
           </div>
-          <div className="bg-white form_box_shadow rounded-2xl p-7 md:p-12 w-[90%] md:w-[80%]">
+          <div className="bg-white form_box_shadow rounded-2xl mt-4 p-7 md:p-12 w-[90%] md:w-[80%] 2xl:w-[1240px]">
             <div className="grid grid-cols-12 gap-6 w-full ">
               <div className="flex flex-col gap-2 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#4E4E4E] font-[450] text-[14px]"
+                  className="text-[#4E4E4E] font-[400] text-[14px] 2xl:text-[20px]"
                   htmlFor="email"
                 >
                   Full name
@@ -31,7 +31,7 @@ const Contact = () => {
               </div>
               <div className="flex flex-col gap-2 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#4E4E4E] font-[450] text-[14px]"
+                  className="text-[#4E4E4E] font-[400] text-[14px] 2xl:text-[20px]"
                   htmlFor="email"
                 >
                   Phone number
@@ -40,7 +40,7 @@ const Contact = () => {
               </div>
               <div className="flex flex-col gap-2 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#4E4E4E] font-[450] text-[14px]"
+                  className="text-[#4E4E4E] font-[400] text-[14px] 2xl:text-[20px]"
                   htmlFor="email"
                 >
                   Email Address
@@ -49,7 +49,7 @@ const Contact = () => {
               </div>
               <div className="flex flex-col gap-2 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#4E4E4E] font-[450] text-[14px]"
+                  className="text-[#4E4E4E] font-[400] text-[14px] 2xl:text-[20px]"
                   htmlFor="email"
                 >
                   Subject
@@ -59,20 +59,20 @@ const Contact = () => {
               <div className="w-full gap-2 col-span-12">
                 <Label
                   htmlFor="message"
-                  className="text-[#4E4E4E] font-[450] text-[14px]"
+                  className="text-[#4E4E4E] font-[400] text-[14px] 2xl:text-[20px]"
                 >
                   Message
                 </Label>
                 <Textarea id="message" />
               </div>
-              <div className="w-full flex flex-col md:flex-row gap-2 col-span-12">
+              <div className="w-full flex flex-col md:flex-row gap-3 col-span-12">
                 <Checkbox
-                  className="h-5 w-5 bg-[#DDDDDD] border-none"
+                  className="h-5 w-5 2xl:w-7 2xl:mt-1 2xl:h-7 bg-[#DDDDDD] border-none"
                   id="terms"
                 />
                 <Label
                   htmlFor="terms"
-                  className="text-[#4E4E4E] font-[400] text-[14px] pl-1"
+                  className="text-[#4E4E4E] font-[400] text-[14px] 2xl:text-[18px] pl-1"
                 >
                   I agree to terms & conditions provided by the company. By
                   providing my phone number, I agree to receive text messages
