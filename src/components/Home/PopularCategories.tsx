@@ -53,11 +53,11 @@ const PopularCategories = () => {
     <div className=" bg-[#F5F5F5] py-20 hidden lg:flex flex-col justify-center items-center  gap-y-3">
       <h1 className="text-heading text-[22px] sm:!text-[28px] text-center font-[600]">Popular Categories</h1>
 
-      <div className="container">
+      <div >
         <Slider {...settings}>
           {/* First Slide */}
           <div className="space-y-3 h-auto py-5">
-            {Array.from({ length: 3 }).map((_, ind) => (
+            {Array.from({ length: 1 }).map((_, ind) => (
               <div key={ind} className="flex justify-center gap-4">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <div
@@ -83,7 +83,7 @@ const PopularCategories = () => {
           </div>
 
           {/* Second Slide */}
-          <div className="space-y-3 h-auto py-5">
+          {/* <div className="space-y-3 h-auto py-5">
             {Array.from({ length: 3 }).map((_, ind) => (
               <div key={ind} className="flex justify-center gap-4">
                 {Array.from({ length: 5 }).map((_, i) => (
@@ -107,7 +107,7 @@ const PopularCategories = () => {
                 ))}
               </div>
             ))}
-          </div>
+          </div> */}
           {/* Add more slides as needed */}
         </Slider>
       </div>

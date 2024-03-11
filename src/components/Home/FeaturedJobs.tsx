@@ -7,15 +7,17 @@ import { Link } from "react-router-dom";
 
 const FeaturedJobs = () => {
   return (
-    <div className="container">
-      <h1 className="text-heading text-[22px] sm:!text-[28px] text-center font-[600]">
+    <div className=" mx-auto container">
+      <h1 className="text-heading text-[22px] sm:!text-[28px] 2xl:!text-[50px] text-center font-[600]">
         Featured Jobs
       </h1>
-      <div className="mt-6 flex flex-col  gap-y-6">
-        <div className="flex md:flex-row items-center  md:justify-evenly flex-col gap-x-7 gap-y-5">
-          <FeatureCard img={JobFeature} />
-          <FeatureCard img={JobFeature2} />
-          <FeatureCard img={JobFeature3} />
+      <div className="mt-10 flex flex-col items-center justify-center  gap-y-6">
+        <div className="flex items-center justify-center ">
+          <div className="grid grid-cols-1 items-center gap-y-5 gap-x-9 md:grid-cols-2 justify-center  lg:grid-cols-3 w-full">
+            <FeatureCard img={JobFeature} />
+            <FeatureCard img={JobFeature2} />
+            <FeatureCard img={JobFeature3} />
+          </div>
         </div>
         <div className="flex justify-center mt-4">
           <Link to={"/featured-jobs"}>

@@ -11,38 +11,40 @@ interface BlogCardPropTypes {
 
 const BlogCard = ({ img, editMode }: BlogCardPropTypes) => {
   return (
-    <Card className="w-auto max-w-[400px] px-5 py-6 space-y-7 lg:mx-2 card-boxshadow rounded-xl border-none">
-      <img
-        src={img}
-        alt="JobFeature"
-        className="object-contain w-full h-auto"
-      />
+    <Card className="w-auto 2xl:max-w-[500px]  px-6 py-8 space-y-7 lg:mx-2 card-boxshadow rounded-xl border-none">
+      <div className="w-full items-center justify-center flex">
+        <img src={img} alt="blog" className="w-[448px]" />
+      </div>
       <div className="space-y-2">
-        <CardTitle className="text-[#1B4C81] text-[22px] font-[600]">
+        <CardTitle className="text-[#1B4C81] text-[22px] 2xl:text-[30px]  font-[600]">
           Blog Title Here
         </CardTitle>
         <div>
-          <CardDescription className="text-[#888888] text-sm font-[400]">
+          <CardDescription className="text-[#888888] text-sm  leading-7 2xl:text-[18px] font-[400]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
           </CardDescription>
         </div>
-        <div className="flex justify-between items-center pt-1">
-          <p className="text-main text-sm font-[400] ">Author: Alex Thomas</p>
-          <p className="text-main_green text-sm font-[400] cursor-pointer ">
+        <div className="flex justify-between items-center pt-5">
+          <p className="text-main text-sm font-[400] 2xl:text-[18px]">
+            Author: Alex Thomas
+          </p>
+          <p className="text-main_green text-sm font-[400] 2xl:text-[18px] cursor-pointer ">
             Follow
           </p>
         </div>
         <div className="flex gap-3 flex-col lg:flex-row justify-between md:items-center pt-2">
-          <p className="text-main text-sm text-center md:text-left font-[400] truncate ">dd-mm-yyyy </p>
-          <div className="flex justify-evenly font-medium  gap-x-2">
-            <p className="text-main text-sm font-[500] flex gap-x-1">
+          <p className="text-main text-sm text-center md:text-left font-[400] truncate 2xl:text-[18px] ">
+            dd-mm-yyyy{" "}
+          </p>
+          <div className="flex justify-evenly font-medium  gap-x-4">
+            <p className="text-main text-sm font-[500] 2xl:text-[16px] flex gap-x-1">
               <Eye size={17} strokeWidth={2} /> 109
             </p>
-            <p className="text-main text-sm font-[500] flex gap-x-1 items-center">
+            <p className="text-main text-sm font-[500] 2xl:text-[16px] flex gap-x-1 items-center">
               <ThumbsUp size={15} strokeWidth={2} /> 08
             </p>
-            <p className="text-main text-sm font-[500] flex gap-x-0.5 items-center">
+            <p className="text-main text-sm font-[500] 2xl:text-[16px] flex gap-x-0.5 items-center">
               <MessageCircle size={16} strokeWidth={2} /> Message Author
             </p>
           </div>

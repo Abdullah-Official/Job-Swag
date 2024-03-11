@@ -4,30 +4,36 @@ import Ad3 from "@/assets/images/ad3.png";
 
 const AdSection = () => {
   return (
-    <div className="container my-10">
-      <div className="flex md:flex-row sm:justify-between gap-y-5 justify-center flex-col gap-x-7">
-        <div>
-          <img
-            src={Ad1}
-            className="object-contain w-full h-[300px] "
-            alt="ad1"
-          />
+    <div className=" my-10 container mx-auto">
+      <section className="py-8  flex justify-center items-center  ">
+        {" "}
+        {/* Added lg:justify-between */}
+        <div className="flex items-center justify-center  ">
+          <div className="grid grid-cols-1 gap-x-9 gap-y-5 md:grid-cols-2 justify-center  lg:grid-cols-3 w-full">
+            <div>
+              <img
+                src={Ad1}
+                className="2xl:max-w-[500px] w-full max-h-[400px] "
+                alt="ad1"
+              />
+            </div>
+            <div>
+              <img
+                src={Ad2}
+                className="2xl:max-w-[500px] w-full max-h-[400px] "
+                alt="ad2"
+              />
+            </div>
+            <div>
+              <img
+                src={Ad3}
+                className="2xl:max-w-[500px] w-full max-h-[400px] "
+                alt="ad3"
+              />
+            </div>
+          </div>
         </div>
-        <div>
-          <img
-            src={Ad2}
-            className="object-contain w-full h-[300px] "
-            alt="ad2"
-          />
-        </div>
-        <div>
-          <img
-            src={Ad3}
-            className="object-contain w-full h-[300px] "
-            alt="ad3"
-          />
-        </div>
-      </div>
+      </section>
     </div>
   );
 };

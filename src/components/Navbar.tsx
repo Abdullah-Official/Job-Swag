@@ -20,7 +20,7 @@ const Navbar = () => {
         </p>
       </header>
       <nav className="p-5 bg-white ">
-        <div className="container md:px-10 flex justify-between gap-x-3 items-center">
+        <div className="container md:px-12 flex justify-between gap-x-3 items-center">
           <div>
             <Link to={"/"}>
               <img

@@ -3,7 +3,7 @@
 @tailwind utilities;
  
 body{
-  background-color: #fafafa;
+  background-color: #ffff !important;
   overflow-x: hidden !important;
   font-family: Poppins !important;
 }
@@ -14,6 +14,7 @@ body{
   height: 34px !important;
   border-radius: 50%;
   padding: 8px !important;
+  z-index: 999999;
   
 }
 
@@ -51,12 +52,13 @@ body{
 }
 
 .partner_card{
-  box-shadow: 10.389610290527344px 15.584415435791016px 51.94805145263672px 0px #4242421a;
+  box-shadow: 10.389610290527344px 15.584415435791016px 51.94805145263672px 0px #5756561a;
 }
 .common-header{
   border-bottom-left-radius: 80px;
   border-bottom-right-radius: 80px
 }
+
 
 @layer utilities {
   .text-heading {

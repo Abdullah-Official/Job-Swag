@@ -17,6 +17,10 @@ const PartnersCarousel = () => {
     arrows: true,
     dots: false,
     pauseOnHover: true,
+    infinite: true,
+    autoplay: true,
+    speed: 1000,
+    cssEase: "linear",
     prevArrow: <ArrowLeft color="white" />,
     nextArrow: <ArrowRight color="white" />,
     responsive: [
@@ -47,51 +51,51 @@ const PartnersCarousel = () => {
     ],
   };
   return (
-    <div className="container mx-auto  max-w-[95%]  lg:max-w-[90%]">
-      <Slider className="lg:container" {...settings}>
+    <div className="container mx-auto  max-w-[95%]  2xl:max-w-[84%] my-10 mb-20">
+      <Slider className="lg:container  " {...settings}>
         {/* partner_card */}
-        <div>
-          <div className="flex items-center justify-center">
+        <div className="pl-5 my-5">
+          <div className="flex bg-white py-5 rounded-lg px-5 partner_card 2xl:max-w-[256px] h-[90px] 2xl:h-[113px] items-center justify-center">
             <img
               src={PartnerImg}
               alt=""
-              className="bg-white py-4 rounded-lg px-5 shadow-xl  w-[190px] object-contain h-[80px] "
+              className="   object-contain "
             />
           </div>
         </div>
-        <div>
-          <div className="flex items-center justify-center">
+        <div className="pl-5 my-5">
+          <div className="flex bg-white py-5 rounded-lg px-5 partner_card 2xl:max-w-[256px] h-[90px] 2xl:h-[113px] items-center justify-center">
             <img
               src={PartnerImg2}
               alt=""
-              className="bg-white py-4 rounded-lg px-5 shadow-xl  w-[190px] object-contain h-[80px] "
+              className="   object-contain "
             />
           </div>
         </div>
-        <div>
-          <div className="flex items-center justify-center">
+        <div className="pl-5 my-5">
+          <div className="flex bg-white py-5 rounded-lg px-5 partner_card 2xl:max-w-[256px] h-[90px] 2xl:h-[113px] items-center justify-center">
             <img
               src={PartnerImg3}
               alt=""
-              className="bg-white py-4 rounded-lg px-5 shadow-xl  w-[190px] object-contain h-[80px] "
+              className="   object-contain "
             />
           </div>
         </div>
-        <div>
-          <div className="flex items-center justify-center">
+        <div className="pl-5 my-5">
+          <div className="flex bg-white py-5 rounded-lg px-5 partner_card 2xl:max-w-[256px] h-[90px] 2xl:h-[113px] items-center justify-center">
             <img
               src={PartnerImg4}
               alt=""
-              className="bg-white py-4 rounded-lg px-5 shadow-xl  w-[190px] object-contain h-[80px] "
+              className="   object-contain "
             />
           </div>
         </div>
-        <div>
-          <div className="flex items-center justify-center">
+        <div className="pl-5 my-5">
+          <div className="flex bg-white py-5 rounded-lg px-5 partner_card 2xl:max-w-[256px] h-[90px] 2xl:h-[113px] items-center justify-center">
             <img
               src={PartnerImg5}
               alt=""
-              className="bg-white py-4 rounded-lg px-5 object-contain shadow-xl  w-[190px] h-[80px] "
+              className="   object-contain  "
             />
           </div>
         </div>
