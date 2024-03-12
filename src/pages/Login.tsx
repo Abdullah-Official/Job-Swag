@@ -3,8 +3,14 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Eye, EyeOff } from "lucide-react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Login = () => {
+
+  const [showPassword, setShowPassword] = useState(false)
+
   return (
     <div className="mb-20 flex flex-col md:flex-row">
       <div className="md:w-[65%] lg:w-[75%] w-full">
@@ -45,9 +51,10 @@ const Login = () => {
                 Password
               </Label>
               <Input
-                type="password"
+                type={showPassword ? "text" : "password"}
                 placeholder="xxxxxxxxxxxxxx"
                 className="w-full"
+                icon={showPassword ? <EyeOff onClick={() => setShowPassword(!showPassword)} className="text-[#474747] cursor-pointer" size={18} /> : <Eye onClick={() => setShowPassword(!showPassword)} className="text-[#474747] cursor-pointer" size={18} />}
               />
             </div>
             <div className="flex justify-between  col-span-12">
@@ -74,7 +81,7 @@ const Login = () => {
             <Button className="w-full 2xl:py-6 2xl:text-[18px]">Log In</Button>
             <p className="text-[#7C7C7C] text-md 2xl:!text-[16px] font-[400]">
               Don’t have an account,{" "}
-              <span className="text-main_green"> Create Account</span>
+              <span className="text-main_green"><Link to={"/create-acc"}> Create Account </Link></span>
             </p>
           </div>
         </div>

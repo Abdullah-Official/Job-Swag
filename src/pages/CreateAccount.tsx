@@ -5,7 +5,7 @@ import Influencer from "@/assets/images/influencer.png";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const CreateAccount = () => {
   const [accType, setAccType] = useState("");
@@ -115,7 +115,8 @@ const CreateAccount = () => {
             </Button>
             <p className="text-[#7C7C7C] text-md 2xl:!text-[16px] font-[400]">
               Already have an account,
-              <span className="text-main_green"> Log In</span>
+              <span className="text-main_green">
+              <Link to={"/login"}> Log In </Link></span>
             </p>
           </div>
         </div>

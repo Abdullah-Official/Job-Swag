@@ -69,10 +69,10 @@ const FeatureJobs = () => {
       </div>
 
       <div className=" mt-16 space-y-16 flex flex-col items-center  ">
-        <div className="flex gap-4 flex-col md:flex-row w-full justify-center">
+        <div className="flex flex-1 gap-4 flex-col md:flex-row w-full justify-center">
           {selectsArr.map((v, i) => (
             <Select  key={i}>
-              <SelectTrigger className="border-[#C6C6C6] w-full xl:w-fit xl:px-10 ">
+              <SelectTrigger className="border-[#C6C6C6]  w-full xl:w-fit xl:px-10 ">
                 <SelectValue placeholder={v} />
               </SelectTrigger>
               <SelectContent>

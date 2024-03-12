@@ -3,10 +3,16 @@
 @tailwind utilities;
  
 body{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
   background-color: #ffff !important;
   overflow-x: hidden !important;
   font-family: Poppins !important;
+  @apply !min-w-full;
 }
+
+
 
 .slick-prev , .slick-next{
   background-color: #55A7A6 !important;
@@ -14,7 +20,7 @@ body{
   height: 34px !important;
   border-radius: 50%;
   padding: 8px !important;
-  z-index: 999999;
+  z-index: 2;
   
 }
 
@@ -59,7 +65,18 @@ body{
   border-bottom-right-radius: 80px
 }
 
-
+/* Media query for screen widths of 1920px and above */
+@media (min-width: 1920px) {
+  .slick-prev,
+  .slick-next {
+    background-color: #55A7A6 !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+  padding: 12px !important;
+  z-index: 2;
+  }
+}
 @layer utilities {
   .text-heading {
     @apply !text-[25px] md:!text-[28px] !font-[600] text-[#1B4C81]; /* Example styles for headings */

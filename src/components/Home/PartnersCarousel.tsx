@@ -7,22 +7,19 @@ import PartnerImg3 from "@/assets/images/partner3.png";
 import PartnerImg4 from "@/assets/images/partner4.png";
 import PartnerImg5 from "@/assets/images/partner5.png";
 
-import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const PartnersCarousel = () => {
   const settings = {
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplaySpeed: 3000,
-    arrows: true,
+    arrows: false,
     dots: false,
     pauseOnHover: true,
     infinite: true,
     autoplay: true,
     speed: 2000,
     cssEase: "linear",
-    prevArrow: <ArrowLeft color="white" />,
-    nextArrow: <ArrowRight color="white" />,
     responsive: [
       {
         breakpoint: 1120,
@@ -52,7 +49,7 @@ const PartnersCarousel = () => {
   };
   return (
     <div className="container mx-auto  max-w-[95%]  2xl:max-w-[84%] ">
-      <Slider className="lg:container  " {...settings}>
+      <Slider className="" {...settings}>
         {/* partner_card */}
         <div className="pl-5 my-5">
           <div className="flex bg-white py-5 rounded-lg px-5 partner_card 2xl:max-w-[256px] h-[90px] 2xl:h-[113px] items-center justify-center">

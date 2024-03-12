@@ -11,7 +11,7 @@ import {
 import { Menu } from "lucide-react";
 const Navbar = () => {
   return (
-    <div className=" w-full fixed !z-50">
+    <div className=" fixed !z-50 w-screen">
       <header className="bg-[#1B4C81] p-2.5 2xl:p-4 flex items-center justify-center">
         <p className="text-xs sm:text-xs font-[400] 2xl:text-[18px] text-white 2xl:w-[1600px] text-center">
           Join Our Online Immigration Community For Free &nbsp; | &nbsp; High
