@@ -27,12 +27,12 @@ const PopularCategories = () => {
       <div className=" w-[90%] hidden lg:block 2xl:w-[1500px] mt-8">
         <Slider {...settings}>
           {/* First Slide */}
-          <div className="flex items-center justify-center">
-            <img src={CategoriesImg} alt="CategoriesImg" className="object-contain w-full px-20" />
+          <div className="flex items-center justify-center outline-none">
+            <img src={CategoriesImg} alt="CategoriesImg" className="object-contain w-full px-20 cursor-pointer" />
           </div>
           
-          <div>
-          <img src={CategoriesImg} alt="CategoriesImg" className="object-contain w-full px-20" />
+          <div className="flex items-center justify-center outline-none">
+          <img src={CategoriesImg} alt="CategoriesImg" className="object-contain w-full px-20 cursor-pointer" />
           </div>
           
 
