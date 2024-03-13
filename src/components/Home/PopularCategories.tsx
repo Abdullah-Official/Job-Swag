@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { MoveLeft, MoveRight } from "lucide-react";
 import CategoriesMobCarousel from "./CateogriesMobCarousel";
-import CategoriesImg from "@/assets/images/cat.png"
+import CategoriesImg from "../../assets/images/cat.png"
 
 const PopularCategories = () => {
   const settings = {
