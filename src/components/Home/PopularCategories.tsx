@@ -21,7 +21,7 @@ const PopularCategories = () => {
   };
 
   return (
-    <div className=" bg-[#F5F5F5] w-full py-20  flex flex-col justify-center items-center  gap-y-3">
+    <div className=" bg-[#F5F5F5] w-full py-20  flex  flex-col justify-center items-center  gap-y-3">
       <h1 className="text-heading text-[22px] sm:!text-[28px] 2xl:!text-[50px] text-center font-[600]">Popular Categories</h1>
 
       <div className=" w-[90%] hidden lg:block 2xl:w-[1500px] mt-8">
