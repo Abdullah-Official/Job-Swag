@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div className="mb-20 -mt-1">
       <CommonHeader title="Contact Us" bannerImg={Banner} />
-      <div className="md:container mt-16 ">
+      <div className="md:container mt-16 lg:max-w-[1400px]">
         <div className="flex flex-wrap justify-center items-center flex-col   gap-x-7 gap-y-10">
           <div className="text-center space-y-4 mx-4">
             <h1 className="text-heading !text-[26px] !font-[600] 2xl:!text-[50px]">Fill the form!</h1>

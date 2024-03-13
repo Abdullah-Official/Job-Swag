@@ -76,12 +76,12 @@ const Navbar = () => {
                   <Link className="text-main text-sm" to="/contact">
                     Contact
                   </Link>
-                  {/* <Link className="text-main text-sm" to="/emp-portal">
+                  <Link className="text-main text-sm" to="/emp-portal">
                     Employee Portal
                   </Link>
                   <Link className="text-main text-sm" to="/jobseeker-portal">
-                    Job Seeker Portal
-                  </Link> */}
+                    Job Portal
+                  </Link>
                 </div>
                 <div className="flex gap-4 mt-5">
                   <Link to="/login">
@@ -122,12 +122,12 @@ const Navbar = () => {
               <Link className="text-main text-sm 2xl:text-[20px] font-[500]" to="/contact">
                 Contact
               </Link>
-              {/* <Link className="text-main text-sm" to="/emp-portal">
+              <Link className="text-main text-sm" to="/emp-portal">
                 Employee Portal
               </Link>
               <Link className="text-main text-sm" to="/jobseeker-portal">
-                Job Seeker Portal
-              </Link> */}
+                Job Portal
+              </Link>
             </div>
             <div className="flex gap-x-4">
               <Link to="/login">

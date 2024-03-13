@@ -8,7 +8,7 @@ const HowItWorks = () => {
   return (
     <div className="mb-20 -mt-1">
       <CommonHeader title="How It Works" bannerImg={Banner} />
-      <div className="mx-auto my-28 2xl:w-[1600px] space-y-24">
+      <div className="mx-auto my-28 2xl:w-[1600px] lg:max-w-[1400px] space-y-24">
         <div className="text-center space-y-4">
           <h3 className="text-heading 2xl:!text-[50px]">How Do We Do It?</h3>
           <p className="text-[#888888] font-[400] text-[15px] 2xl:text-[22px]">

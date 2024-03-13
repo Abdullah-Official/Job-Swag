@@ -48,7 +48,7 @@ const PartnersCarousel = () => {
     ],
   };
   return (
-    <div className="container mx-auto  max-w-[95%]  2xl:max-w-[84%] ">
+    <div className="container mx-auto   max-w-[95%]  2xl:max-w-[84%] ">
       <Slider className="" {...settings}>
         {/* partner_card */}
         <div className="pl-5 my-5">

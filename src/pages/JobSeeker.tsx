@@ -12,14 +12,14 @@ import AddComponent from "@/components/common/AddComponent";
 const JobSeeker = () => {
   return (
     <div>
-      <div className="bg-primary h-[65vh] flex items-center justify-center rounded-b-[60px]">
+      <div className="bg-primary h-[450px] 2xl:h-[550px] flex items-center justify-center rounded-b-[60px]">
        
-        <h3 className="text-white font-[600] text-[40px] -mt-20">Job Seeker</h3>
+        <h3 className="text-white font-[600] text-[40px] 2xl:text-[60px] -mt-20">Job Seeker</h3>
       </div>
-      <div className="md:container flex justify-center -mt-40 mb-20">
-        <div className="bg-white space-y-10 form_box_shadow rounded-2xl p-7 md:p-12 w-[90%] md:w-[80%]">
+      <div className="md:container  flex justify-center -mt-[210px] mb-20">
+        <div className="bg-white 2xl:w-[1240px] space-y-10 form_box_shadow rounded-[30px] p-7 md:p-12 md:py-10 w-[90%] md:w-[80%]">
           <div className="space-y-3">
-            <h2 className="text-heading">Profile Picture</h2>
+            <h2 className="text-heading 2xl:!text-[30px] !font-[600]">Profile Picture</h2>
             <div className="flex flex-col gap-y-2 sm:flex-row gap-x-4 items-center">
               <img
                 src={PicAvatar}
@@ -27,10 +27,10 @@ const JobSeeker = () => {
                 alt="pic_avatar"
               />
               <div className="space-y-2">
-                <p className="text-main text-sm font-[450]">
+                <p className="text-main text-sm font-[400] 2xl:text-[18px] ">
                   File Size Limited to 2MB.
                 </p>
-                <Button size={"sm"} className="text-xs  w-[100px]">
+                <Button size={"sm"} className="text-sm 2xl:w-[120px] font-[500] w-[100px] py-5 ">
                   <UploadIcon className="!text-[1px]" /> &nbsp; Upload
                 </Button>
               </div>
@@ -38,11 +38,11 @@ const JobSeeker = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-5">
-            <h2 className="text-heading">Contact Information</h2>
+            <h2 className="text-heading 2xl:!text-[30px] !font-[600]">Contact Information</h2>
             <div className="grid grid-cols-12 gap-6 w-full ">
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   Mailing Address
@@ -51,12 +51,12 @@ const JobSeeker = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Enter here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="app_no"
                 >
                   Appartment Number
@@ -65,12 +65,12 @@ const JobSeeker = () => {
                   type="text"
                   id="app_no"
                   placeholder="Enter here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-4 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="country"
                 >
                   Country
@@ -79,12 +79,12 @@ const JobSeeker = () => {
                   type="text"
                   id="country"
                   placeholder="Enter here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-4 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="state"
                 >
                   State
@@ -93,12 +93,12 @@ const JobSeeker = () => {
                   type="text"
                   id="state"
                   placeholder="Enter here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-4 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="city"
                 >
                   City
@@ -107,12 +107,12 @@ const JobSeeker = () => {
                   type="text"
                   id="city"
                   placeholder="Enter here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="zip_code"
                 >
                   Zip Code
@@ -121,13 +121,13 @@ const JobSeeker = () => {
                   type="text"
                   id="zip_code"
                   placeholder="Enter here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 " />
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="zip_code"
                 >
                   Preferred Method of Contact
@@ -136,14 +136,14 @@ const JobSeeker = () => {
                   type="text"
                   id="zip_code"
                   placeholder="Select"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
             </div>
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-5">
-            <h2 className="text-heading">
+            <h2 className="text-heading 2xl:!text-[30px] !font-[600]">
               Career Goals & Availability
             </h2>
             <div>
@@ -151,7 +151,7 @@ const JobSeeker = () => {
                 <div className="w-full flex col-span-12 flex-col gap-1">
                   <Label
                     htmlFor="message"
-                    className="text-[#474747] font-[500] text-[14px]"
+                    className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   >
                     Career Global Statement
                   </Label>
@@ -160,7 +160,7 @@ const JobSeeker = () => {
                 <div className="w-full flex col-span-12 md:col-span-6 flex-col gap-1">
                   <Label
                     htmlFor="date"
-                    className="text-[#474747] font-[500] text-[14px]"
+                    className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   >
                     Available Start Date
                   </Label>
@@ -171,7 +171,7 @@ const JobSeeker = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-3">
-            <h2 className="text-heading">Videos</h2>
+            <h2 className="text-heading 2xl:!text-[30px] !font-[600]">Videos</h2>
             <div className="flex flex-col gap-y-2 sm:flex-row gap-x-4 items-center">
               <img
                 src={VideoOpt}
@@ -179,10 +179,10 @@ const JobSeeker = () => {
                 alt="pic_avatar"
               />
               <div className="space-y-2">
-                <p className="text-main text-sm font-[450]">
+                <p className="text-main text-sm font-[400] 2xl:text-[18px]">
                   File Size Limited to 20MB.
                 </p>
-                <Button size={"sm"} className="text-xs  w-[100px]">
+                <Button size={"sm"} className="text-xs 2xl:w-[120px] font-[500] w-[100px] py-5">
                   <UploadIcon className="!text-[1px]" /> &nbsp; Upload
                 </Button>
               </div>
@@ -190,23 +190,23 @@ const JobSeeker = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-7">
-            <h2 className="text-heading">Looking for</h2>
+            <h2 className="text-heading 2xl:!text-[30px] !font-[600]">Looking for</h2>
             <div className="grid grid-cols-12 md:items-center md:flex-row gap-x-8 gap-y-2">
               <div className="col-span-12 sm:col-span-4  lg:col-span-2">
-                <p className="text-[#474747] font-[500] text-[14px]">
+                <p className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]">
                   Willing to Relocate:
                 </p>
               </div>
               <div className="col-span-12  sm:col-span-8 lg:col-span-10  gap-x-6 flex items-center">
                 <div className="flex  gap-2 ">
                   <Checkbox className="h-5 w-5 bg-[#ffff] border-[#C6C6C6]" />
-                  <Label className="text-[#7C7C7C] font-[500] text-[13px]">
+                  <Label className="text-[#7C7C7C] font-[500] text-[13px] 2xl:text-[16px]">
                     Yes
                   </Label>
                 </div>
                 <div className="flex  gap-2 ">
                   <Checkbox className="h-5 w-5 bg-[#ffff] border-[#C6C6C6]" />
-                  <Label className="text-[#7C7C7C] font-[500] text-[13px]">
+                  <Label className="text-[#7C7C7C] font-[500] text-[13px] 2xl:text-[16px]">
                     No
                   </Label>
                 </div>
@@ -214,7 +214,7 @@ const JobSeeker = () => {
             </div>
             <div className="grid grid-cols-12 md:items-center md:flex-row gap-x-8 gap-y-2">
               <div className="col-span-12 sm:col-span-4  lg:col-span-2">
-                <p className="text-[#474747] font-[500] text-[14px]">
+                <p className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]">
                   Work Type:
                 </p>
               </div>
@@ -222,7 +222,7 @@ const JobSeeker = () => {
                 {["On-site", "Traveling", "Remote", "Mixed"].map((v, i) => (
                   <div key={i} className="flex  gap-2 ">
                     <Checkbox className="h-5 w-5 bg-[#ffff] border-[#C6C6C6]" />
-                    <Label className="text-[#7C7C7C] font-[500] text-[13px]">
+                    <Label className="text-[#7C7C7C] font-[500] text-[13px] 2xl:text-[16px]">
                       {v}
                     </Label>
                   </div>
@@ -231,7 +231,7 @@ const JobSeeker = () => {
             </div>
             <div className="grid grid-cols-12 md:items-center md:flex-row gap-x-8 gap-y-2">
               <div className="col-span-12 sm:col-span-4  lg:col-span-2">
-                <p className="text-[#474747] font-[500] text-[14px]">
+                <p className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]">
                   Workdays:
                 </p>
               </div>
@@ -247,7 +247,7 @@ const JobSeeker = () => {
                 ].map((v, i) => (
                   <div key={i} className="flex  gap-2 ">
                     <Checkbox className="h-5 w-5 bg-[#ffff] border-[#C6C6C6]" />
-                    <Label className="text-[#7C7C7C] font-[500] text-[13px]">
+                    <Label className="text-[#7C7C7C] font-[500] text-[13px] 2xl:text-[16px]">
                       {v}
                     </Label>
                   </div>
@@ -256,14 +256,14 @@ const JobSeeker = () => {
             </div>
             <div className="grid grid-cols-12 md:items-center md:flex-row gap-x-8 gap-y-2">
               <div className="col-span-12 sm:col-span-4  lg:col-span-2">
-                <p className="text-[#474747] font-[500] text-[14px]">Shifts:</p>
+                <p className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]">Shifts:</p>
               </div>
               <div className="col-span-12  sm:col-span-8 lg:col-span-10  gap-x-6 flex flex-wrap gap-y-4 items-center">
                 {["Morning", "Afternoon", "Evening", "All Options"].map(
                   (v, i) => (
                     <div key={i} className="flex  gap-2 ">
                       <Checkbox className="h-5 w-5 bg-[#ffff] border-[#C6C6C6]" />
-                      <Label className="text-[#7C7C7C] font-[500] text-[13px]">
+                      <Label className="text-[#7C7C7C] font-[500] text-[13px] 2xl:text-[16px]">
                         {v}
                       </Label>
                     </div>
@@ -273,7 +273,7 @@ const JobSeeker = () => {
             </div>
             <div className="grid grid-cols-12 md:items-center md:flex-row md:gap-x-8 gap-y-2">
               <div className="col-span-12 sm:col-span-4  lg:col-span-2">
-                <p className="text-[#474747] font-[500] text-[14px]">
+                <p className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]">
                   Career Level:
                 </p>
               </div>
@@ -288,7 +288,7 @@ const JobSeeker = () => {
                 ].map((v, i) => (
                   <div key={i} className="flex  gap-2 ">
                     <Checkbox className="h-5 w-5 bg-[#ffff] border-[#C6C6C6]" />
-                    <Label className="text-[#7C7C7C] font-[500] text-[13px]">
+                    <Label className="text-[#7C7C7C] font-[500] text-[13px] 2xl:text-[16px]">
                       {v}
                     </Label>
                   </div>
@@ -297,7 +297,7 @@ const JobSeeker = () => {
             </div>
             <div className="grid grid-cols-12 md:items-center md:flex-row md:gap-x-8 gap-y-2">
               <div className="col-span-12 sm:col-span-4  lg:col-span-2">
-                <p className="text-[#474747] font-[500] text-[14px]">Salary:</p>
+                <p className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]">Salary:</p>
               </div>
               <div className="col-span-12  sm:col-span-8 lg:col-span-10  gap-x-6 flex flex-wrap  gap-y-4 items-center">
                 {["Lower Range", "Higher Range", "Currency", "Period"].map(
@@ -315,11 +315,11 @@ const JobSeeker = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-5">
-            <h2 className="text-heading">Education Information</h2>
+            <h2 className="text-heading 2xl:!text-[30px] !font-[600]">Education</h2>
             <div className="grid grid-cols-12 gap-6 w-full ">
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   Education Level
@@ -328,12 +328,12 @@ const JobSeeker = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Bachelor's"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="app_no"
                 >
                   Field of Study
@@ -342,12 +342,12 @@ const JobSeeker = () => {
                   type="text"
                   id="app_no"
                   placeholder="Business Administration"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="country"
                 >
                   Institution's Name
@@ -356,12 +356,12 @@ const JobSeeker = () => {
                   type="text"
                   id="country"
                   placeholder="Institution's Name"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="state"
                 >
                   Status
@@ -370,12 +370,12 @@ const JobSeeker = () => {
                   type="text"
                   id="state"
                   placeholder="Graduated"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
             </div>
             <div className="space-y-3">
-              <h2 className="text-[#474747] font-[500] text-[14px]">
+              <h2 className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]">
                 Upload Documents
               </h2>
               <div className="flex flex-col gap-y-2 sm:flex-row gap-x-4 items-center">
@@ -400,11 +400,11 @@ const JobSeeker = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-5">
-            <h2 className="text-heading">Job Experience</h2>
+            <h2 className="text-heading 2xl:!text-[30px] !font-[600]">Job Experience</h2>
             <div className="grid grid-cols-12 gap-6 w-full ">
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   Employer's Name
@@ -413,12 +413,12 @@ const JobSeeker = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Ernst n Youngs"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="app_no"
                 >
                   Job Title
@@ -427,12 +427,12 @@ const JobSeeker = () => {
                   type="text"
                   id="app_no"
                   placeholder="Finance Executive"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="country"
                 >
                   Institution's Name
@@ -441,12 +441,12 @@ const JobSeeker = () => {
                   type="text"
                   id="country"
                   placeholder="Institution's Name"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="country"
                 >
                   Description
@@ -454,12 +454,12 @@ const JobSeeker = () => {
                 <Textarea
                   id="country"
                   placeholder="Max 150 Words Allowed"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-4">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="state"
                 >
                   From
@@ -468,12 +468,12 @@ const JobSeeker = () => {
                   type="date"
                   id="state"
                   placeholder="dd/mm/yyyy"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-4">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="state"
                 >
                   To
@@ -482,31 +482,31 @@ const JobSeeker = () => {
                   type="date"
                   id="state"
                   placeholder="dd/mm/yyyy"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex w-full col-span-12 md:col-span-4  gap-2 items-center mt-5 ">
                 <Checkbox className="h-5 w-5 bg-[#ffff] border-[#C6C6C6]" />
-                <Label className="text-[#7C7C7C] font-[500] text-[13px]">
+                <Label className="text-[#7C7C7C] font-[500] text-[13px] 2xl:text-[16px]">
                   Current Employer
                 </Label>
               </div>
             </div>
             <div className="grid grid-cols-12 !mt-10 space-y-3">
               <div className="col-span-12 md:col-span-6 space-y-4 ">
-                <p className="text-[#474747] font-[500] text-[14px]">
+                <p className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]">
                   Was it a Supervisor Role?
                 </p>
                 <div className="flex space-x-5 items-center">
                   <div className="flex space-x-3 items-center">
                     <Checkbox className="h-5 w-5 bg-white border-[#C6C6C6]" />
-                    <Label className="text-[#7C7C7C] font-[500] text-[13px]">
+                    <Label className="text-[#7C7C7C] font-[500] text-[13px] 2xl:text-[16px]">
                       Current Employer
                     </Label>
                   </div>
                   <div className="flex space-x-3 items-center">
                     <Checkbox className="h-5 w-5 bg-white border-[#C6C6C6]" />
-                    <Label className="text-[#7C7C7C] font-[500] text-[13px]">
+                    <Label className="text-[#7C7C7C] font-[500] text-[13px] 2xl:text-[16px]">
                       Current Employer
                     </Label>
                   </div>
@@ -515,7 +515,7 @@ const JobSeeker = () => {
               <div className="col-span-12 md:col-span-6">
                 <div className="flex flex-col gap-1 col-span-12 md:col-span-4">
                   <Label
-                    className="text-[#474747] font-[500] text-[14px]"
+                    className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                     htmlFor="state"
                   >
                     Number of People Supervised
@@ -524,7 +524,7 @@ const JobSeeker = () => {
                     type="text"
                     id="state"
                     placeholder="Enter Here"
-                    className="w-full"
+                    className="w-full 2xl:text-[18px]"
                   />
                 </div>
               </div>
@@ -532,7 +532,7 @@ const JobSeeker = () => {
             <div className="grid grid-cols-12 gap-6 w-full ">
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   Type of Provider
@@ -541,13 +541,13 @@ const JobSeeker = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Limited Liability Company (LLC)"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 "></div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   Years of Experience
@@ -556,13 +556,13 @@ const JobSeeker = () => {
                   type="text"
                   id="mail_add"
                   placeholder="02"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 "></div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   Duties & Responsibilities
@@ -571,7 +571,7 @@ const JobSeeker = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Professional Skill"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6  justify-center pt-4">
@@ -579,7 +579,7 @@ const JobSeeker = () => {
               </div>
               <div className="flex flex-col gap-1 col-span-12">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="country"
                 >
                   Description
@@ -587,7 +587,7 @@ const JobSeeker = () => {
                 <Textarea
                   id="country"
                   placeholder="Max 150 Words Allowed"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
             </div>
@@ -597,11 +597,11 @@ const JobSeeker = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-5">
-            <h2 className="text-heading">References</h2>
+            <h2 className="text-heading 2xl:!text-[30px] !font-[600]">References</h2>
             <div className="grid grid-cols-12 gap-6 w-full ">
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   Reference Type
@@ -610,7 +610,7 @@ const JobSeeker = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Professional"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 "></div>
@@ -619,7 +619,7 @@ const JobSeeker = () => {
                   type="text"
                   id="country"
                   placeholder="Prefix"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-3 ">
@@ -627,7 +627,7 @@ const JobSeeker = () => {
                   type="text"
                   id="country"
                   placeholder="Full name"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-3 ">
@@ -635,7 +635,7 @@ const JobSeeker = () => {
                   type="text"
                   id="country"
                   placeholder="Suffix"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-3 ">
@@ -643,7 +643,7 @@ const JobSeeker = () => {
                   type="text"
                   id="country"
                   placeholder="Title"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-3 ">
@@ -651,7 +651,7 @@ const JobSeeker = () => {
                   type="text"
                   id="country"
                   placeholder="Employer"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-3 ">
@@ -659,7 +659,7 @@ const JobSeeker = () => {
                   type="text"
                   id="country"
                   placeholder="Phone"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-3 ">
@@ -667,7 +667,7 @@ const JobSeeker = () => {
                   type="text"
                   id="country"
                   placeholder="Email Address"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
             </div>
@@ -677,11 +677,11 @@ const JobSeeker = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-5">
-            <h2 className="text-heading">Other</h2>
+            <h2 className="text-heading 2xl:!text-[30px] !font-[600]">Other</h2>
             <div className="grid grid-cols-12 gap-6 w-full ">
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   Attributes
@@ -690,7 +690,7 @@ const JobSeeker = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Professional Development"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6  justify-center pt-4">
@@ -698,7 +698,7 @@ const JobSeeker = () => {
               </div>
               <div className="flex flex-col gap-1 col-span-12">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="country"
                 >
                   Description
@@ -706,7 +706,7 @@ const JobSeeker = () => {
                 <Textarea
                   id="country"
                   placeholder="Max 150 Words Allowed"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
             </div>
@@ -716,12 +716,12 @@ const JobSeeker = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-5">
-            <h2 className="text-heading">Immigration Status</h2>
+            <h2 className="text-heading 2xl:!text-[30px] !font-[600]">Immigration Status</h2>
             <div className="grid grid-cols-12">
               <div className="col-span-12 md:col-span-6">
                 <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                   <Label
-                    className="text-[#474747] font-[500] text-[14px]"
+                    className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                     htmlFor="mail_add"
                   >
                     Status
@@ -730,7 +730,7 @@ const JobSeeker = () => {
                     type="text"
                     id="mail_add"
                     placeholder="I am a citizen - can work for any employer"
-                    className="w-full"
+                    className="w-full 2xl:text-[18px]"
                   />
                 </div>
               </div>
@@ -738,11 +738,11 @@ const JobSeeker = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-5">
-            <h2 className="text-heading">In The Media</h2>
+            <h2 className="text-heading 2xl:!text-[30px] !font-[600]">In The Media</h2>
             <div className="grid grid-cols-12 gap-6 w-full">
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   URLs
@@ -751,13 +751,13 @@ const JobSeeker = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Enter Here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="col-span-12 md:col-span-6">
                 <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                   <Label
-                    className="text-[#474747] font-[500] text-[14px]"
+                    className="text-[#474747] font-[500] text-[14px] 2xl:text-[18px]"
                     htmlFor="mail_add"
                   >
                     URLs
@@ -766,7 +766,7 @@ const JobSeeker = () => {
                     type="text"
                     id="mail_add"
                     placeholder="Enter Here"
-                    className="w-full"
+                    className="w-full 2xl:text-[18px]"
                   />
                 </div>
               </div>

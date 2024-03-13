@@ -11,13 +11,13 @@ import AddComponent from "@/components/common/AddComponent";
 const Employeer = () => {
   return (
     <div>
-      <div className="bg-primary h-[65vh] flex items-center justify-center rounded-b-[60px]">
-        <h3 className="text-white font-[600] text-[40px] -mt-20">Employeer</h3>
+      <div className="bg-primary h-[450px] 2xl:h-[550px] flex items-center justify-center rounded-b-[60px]">
+        <h3 className="text-white font-[600] text-[40px] 2xl:text-[60px] -mt-20">Employeer</h3>
       </div>
-      <div className="md:container flex justify-center -mt-40 mb-20">
-        <div className="bg-white space-y-10 form_box_shadow rounded-2xl p-7 md:p-12 w-[90%] md:w-[80%]">
+      <div className="md:container flex justify-center -mt-40 2xl:-mt-[210px] mb-20">
+        <div className="bg-white 2xl:w-[1240px] space-y-10 form_box_shadow rounded-[30px] p-7 md:p-12 md:py-10 w-[90%] md:w-[80%]">
           <div className="space-y-3">
-            <h2 className="text-heading !text-2xl">Company Logo</h2>
+            <h2 className="text-heading !text-[20px] 2xl:!text-[30px] !font-[600]">Company Logo</h2>
             <div className="flex flex-col gap-y-2 sm:flex-row gap-x-4 items-center">
               <img
                 src={PicAvatar}
@@ -25,10 +25,10 @@ const Employeer = () => {
                 alt="pic_avatar"
               />
               <div className="space-y-2">
-                <p className="text-main text-sm font-[450]">
+                <p className="text-main text-sm font-[400] 2xl:text-[18px]">
                   File Size Limited to 2MB.
                 </p>
-                <Button size={"sm"} className="text-xs  w-[100px]">
+                <Button size={"sm"} className="text-sm 2xl:w-[120px] font-[500] w-[100px] py-5">
                   <UploadIcon className="!text-[1px]" /> &nbsp; Upload
                 </Button>
               </div>
@@ -36,11 +36,11 @@ const Employeer = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-5">
-            <h2 className="text-heading !text-2xl">About Company</h2>
+            <h2 className="text-heading 2xl:!text-[30px] !font-[600]">About Company</h2>
             <div className="grid grid-cols-12 gap-6 w-full ">
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px]  2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   Employer's Name
@@ -49,12 +49,12 @@ const Employeer = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Enter here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px]  2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   Type of Provider
@@ -63,12 +63,12 @@ const Employeer = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Limited Liability Company (LLC)"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px]  2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   EIN
@@ -77,12 +77,12 @@ const Employeer = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Enter here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px]  2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   URLs
@@ -91,12 +91,12 @@ const Employeer = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Enter here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px]  2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   Number of Employees
@@ -105,12 +105,12 @@ const Employeer = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Enter here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px]  2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   Annual Budget
@@ -119,12 +119,12 @@ const Employeer = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Enter here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px]  2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   Number of Location
@@ -133,12 +133,12 @@ const Employeer = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Enter here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px]  2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   Year Established
@@ -147,12 +147,12 @@ const Employeer = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Enter here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px]  2xl:text-[18px]"
                   htmlFor="country"
                 >
                   Description
@@ -160,18 +160,18 @@ const Employeer = () => {
                 <Textarea
                   id="country"
                   placeholder="Max 1000 Words Allowed"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
             </div>
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-5">
-            <h2 className="text-heading !text-2xl">Contact Information</h2>
+            <h2 className="text-heading 2xl:!text-[30px] !font-[600]">Contact Information</h2>
             <div className="grid grid-cols-12 gap-6 w-full ">
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px]  2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   Full name
@@ -180,12 +180,12 @@ const Employeer = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Enter here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px]  2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   Title
@@ -194,12 +194,12 @@ const Employeer = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Limited Liability Company (LLC)"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px]  2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   Email Address
@@ -208,12 +208,12 @@ const Employeer = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Enter here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px]  2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   Phone Number
@@ -222,7 +222,7 @@ const Employeer = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Enter here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex  gap-2 col-span-12 md:col-span-6">
@@ -238,11 +238,11 @@ const Employeer = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-5">
-            <h2 className="text-heading !text-2xl">Locations</h2>
+            <h2 className="text-heading 2xl:!text-[30px] !font-[600]">Locations</h2>
             <div className="grid grid-cols-12 gap-6 w-full ">
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px]  2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   Mailing Address
@@ -251,12 +251,12 @@ const Employeer = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Enter here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-6 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px]  2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   Zip Code
@@ -265,12 +265,12 @@ const Employeer = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Enter here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-4 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px]  2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   Country
@@ -279,12 +279,12 @@ const Employeer = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Enter here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-4 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px]  2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   State
@@ -293,12 +293,12 @@ const Employeer = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Enter here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
               <div className="flex flex-col gap-1 col-span-12 md:col-span-4 ">
                 <Label
-                  className="text-[#474747] font-[500] text-[14px]"
+                  className="text-[#474747] font-[500] text-[14px]  2xl:text-[18px]"
                   htmlFor="mail_add"
                 >
                   City
@@ -307,7 +307,7 @@ const Employeer = () => {
                   type="text"
                   id="mail_add"
                   placeholder="Enter here"
-                  className="w-full"
+                  className="w-full 2xl:text-[18px]"
                 />
               </div>
             </div>
@@ -317,7 +317,7 @@ const Employeer = () => {
           </div>
           <hr className="border-t-2 border-gray-300 my-10 border-dotted mb-4" />
           <div className="space-y-3">
-            <h2 className="text-heading !text-2xl">Images and Videos</h2>
+            <h2 className="text-heading 2xl:!text-[30px] !font-[600]">Images and Videos</h2>
             <div className="flex flex-col gap-y-2 sm:flex-row gap-x-4 items-center">
               <img
                 src={VideoOpt}
@@ -325,10 +325,10 @@ const Employeer = () => {
                 alt="pic_avatar"
               />
               <div className="space-y-2">
-                <p className="text-main text-sm font-[450]">
+                <p className="text-main text-sm font-[400] 2xl:text-[18px]">
                   File Size Limited to 20MB.
                 </p>
-                <Button size={"sm"} className="text-xs  w-[100px]">
+                <Button size={"sm"} className="text-xs 2xl:w-[120px] w-[100px]">
                   <UploadIcon className="!text-[1px]" /> &nbsp; Upload
                 </Button>
               </div>

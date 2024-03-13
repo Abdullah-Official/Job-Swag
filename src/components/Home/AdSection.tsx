@@ -4,7 +4,7 @@ import Ad3 from "@/assets/images/ad3.png";
 
 const AdSection = () => {
   return (
-    <div className=" my-10 container mx-auto">
+    <div className=" my-10 2xl:max-w-[1600px] lg:max-w-[1400px] container mx-auto">
       <section className="py-8  flex justify-center items-center  ">
         {" "}
         {/* Added lg:justify-between */}

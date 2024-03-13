@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className="mb-20 -mt-1 ">
       <CommonHeader title="About Us" bannerImg={Banner} />
-      <div className="  mx-auto mt-24 2xl:w-[1600px] " >
+      <div className="  mx-auto mt-24 2xl:w-[1600px] lg:max-w-[1400px] " >
         <div className="md:container w-full space-y-5 sm:space-y-32">
           <div className="flex flex-col gap-x-8 justify-center items-center lg:flex-row ">
             <div className="w-full p-4 ">

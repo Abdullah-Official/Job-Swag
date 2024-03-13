@@ -11,10 +11,10 @@ import {
 const SortSelect = () => {
   return (
     <div>
-      <div className="flex gap-3 items-center">
-      <p className="text-sm text-[#7C7C7C] whitespace-nowrap">Sort By</p>
+      <div className="flex gap-5 items-center">
+      <p className="text-sm text-[#7C7C7C] whitespace-nowrap 2xl:text-[18px] font-[400]">Sort By</p>
       <Select>
-        <SelectTrigger className="w-auto md:w-full text-[#7C7C7C] text-xs bg-transparent border-[#C6C6C6] ">
+        <SelectTrigger className="w-auto md:w-full py-4 2xl:py-7 px-3 text-[#7C7C7C] 2xl:text-[18px] font-[500] text-xs bg-transparent border-[#C6C6C6] ">
           <SelectValue placeholder={"Recent Added"} />
         </SelectTrigger>
         <SelectContent>

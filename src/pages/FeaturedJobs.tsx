@@ -33,7 +33,7 @@ const FeatureJobs = () => {
   return (
     <div className="mb-20 -mt-1">
       <CommonHeader title="Featured Jobs" bannerImg={Banner} />
-      <div className="container mx-auto 2xl:w-[1600px]">
+      <div className="container mx-auto 2xl:w-[1600px] lg:max-w-[1400px]">
       <div className="flex justify-center w-full ">
         <div className="-mt-10 w-full flex justify-center ">
           <div

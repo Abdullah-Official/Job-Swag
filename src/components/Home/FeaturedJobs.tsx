@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const FeaturedJobs = () => {
   return (
-    <div className=" mx-auto container">
+    <div className=" mx-auto container lg:max-w-[1400px] 2xl:max-w-[1600px]">
       <h1 className="text-heading text-[22px] sm:!text-[28px] 2xl:!text-[50px] text-center font-[600]">
         Featured Jobs
       </h1>

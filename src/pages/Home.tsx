@@ -11,13 +11,15 @@ export default function Home() {
   return (
     <div className="">
       <HeroSection />
-      <div className="my-20 space-y-20">
+      <div className="my-20 space-y-20  ">
         {/* Video Container  */}
         <VideoCards />
         <PopularCategories />
         <AdSection />
         <FeaturedJobs />
+        <div className="bg-[#E5F4F4]">
         <FeaturedInfluencers />
+        </div>
         <RecentBlogs />
         <AdSection />
         <PartnersCarousel />

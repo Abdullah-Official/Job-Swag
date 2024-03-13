@@ -7,11 +7,11 @@ import { Link } from "react-router-dom";
 
 const RecentBlogs = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto 2xl:max-w-[1600px] lg:max-w-[1400px]">
       <h1 className="text-heading text-[22px] sm:!text-[28px] 2xl:!text-[50px] text-center font-[600]">
         Recent Blog Posts
       </h1>
-      <div className="mt-10 flex flex-col items-center justify-center gap-y-6">
+      <div className="mt-10 flex flex-col items-center justify-center  gap-y-6">
         <div className="flex items-center justify-center">
           <div className="grid grid-cols-1 gap-y-6 md:grid-cols-2 gap-x-4 lg:grid-cols-3 w-full">
             <BlogCard img={BlogImg3} />

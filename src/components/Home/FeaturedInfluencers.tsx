@@ -6,7 +6,7 @@ import Influencer3 from "@/assets/images/influencer3.png";
 
 const FeaturedInfluencers = () => {
   return (
-    <div className="bg-[#E5F4F4] py-20  mx-auto container">
+    <div className="bg-[#E5F4F4] py-20 lg:max-w-[1400px] 2xl:max-w-[1600px]  mx-auto container">
       <h1 className="text-heading text-[22px] sm:!text-[28px] 2xl:!text-[50px] text-center font-[600]">
         Featured Influencers
       </h1>

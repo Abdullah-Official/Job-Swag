@@ -7,7 +7,7 @@ const SearchComponent = () => {
     <div className="flex justify-center w-full">
       <div
         style={{ boxShadow: "10px 20px 80px 0px #00000026" }}
-        className="bg-white w-full mx-4 md:mx-0 md:w-[65%] shadow-2xl px-5 py-7 rounded-3xl flex flex-col md:flex-row   items-center gap-4"
+        className="bg-white w-full mx-4 md:mx-0 md:w-[80%] shadow-2xl px-5 py-7 rounded-3xl flex flex-col md:flex-row   items-center gap-4"
       >
         <div className="relative w-full">
           <SearchIcon
@@ -32,7 +32,7 @@ const SearchComponent = () => {
           />
         </div>
         {/* <Input type="text" placeholder="Location" /> */}
-        <Button className="w-full md:w-fit px-6">Find Jobs</Button>
+        <Button className="w-full md:w-fit px-6 2xl:py-6 py-3 2xl:text-[16px]">Find Jobs</Button>
       </div>
     </div>
   );
