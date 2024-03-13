@@ -36,15 +36,15 @@ const Analytics = () => {
           {tab === "Blog Posts" ? "Blog Posts" : "Analytics"}
         </h1>
       </div>
-      <div className="flex flex-col md:flex-row gap-x-7 gap-y-5">
-        <div className="bg-white 2xl:!max-w-[420px] side-card h-fit flex flex-col gap-y-6 rounded-xl py-5 px-4 2xl:py-10 2xl:px-7  w-full md:max-w-[280px]">
+      <div className="flex flex-col md:flex-row gap-x-12 gap-y-5">
+        <div className="bg-white 2xl:!max-w-[420px] side-card h-fit flex flex-col gap-y-6 rounded-xl py-5 px-4 2xl:py-10 2xl:px-9  w-full md:max-w-[280px]">
           {sideTabs.map((t, i) => (
             <div
               onClick={() => t.onClick()}
               key={i}
               className={`${
                 t.tab === tab ? "text-main_green" : "text-main"
-              } cursor-pointer font-[500] 2xl:text-[22px] text-sm border-b-2 py-5 flex justify-between`}
+              } cursor-pointer font-[500] 2xl:text-[22px] text-sm border-b-2 pb-3 2xl:py-5 flex justify-between`}
             >
               <p>{t.tab}</p>
               <ChevronRightIcon

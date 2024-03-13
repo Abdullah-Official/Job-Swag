@@ -12,20 +12,20 @@ const BlogPosts = () => {
   const sideTabs = ["Active", "Inactive", "Drafts", "Deleted"];
 
   return (
-    <div className="container my-14 space-y-6">
-      <div className="flex justify-between gap-3 md:items-center">
+    <div className="container 2xl:max-w-[1600px] lg:max-w-[1400px] 2xl:!my-36 !my-16 space-y-6">
+      <div className="flex flex-col sm:flex-row justify-between gap-3 md:items-center">
         <h1 className="text-heading !font-[700] !text-[24px]">Blog Posts</h1>
-        <Button>Create a Blog Post</Button>
+        <Button className="w-full md:w-fit px-8 font-[500] py-5">Create a Blog Post</Button>
       </div>
-      <div className="flex flex-col md:flex-row gap-x-7 gap-y-5">
-        <div className="bg-white side-card h-fit flex flex-col gap-y-6 rounded-xl py-5 px-4  w-full md:max-w-[280px]">
+      <div className="flex flex-col md:flex-row gap-x-12 gap-y-5">
+      <div className="bg-white 2xl:!max-w-[420px] side-card h-fit flex flex-col 2xl:py-10 2xl:px-9 gap-y-6 rounded-xl py-5 px-4  w-full md:max-w-[280px]">
           {sideTabs.map((t, i) => (
             <div
               onClick={() => setTab(t)}
               key={i}
               className={`${
                 t === tab ? "text-main_green" : "text-main"
-              } cursor-pointer font-[480] text-sm border-b-2 pb-3 flex justify-between`}
+              } cursor-pointer font-[500] 2xl:text-[22px] text-sm border-b-2 pb-3 2xl:py-4 2xl:pb-8 flex justify-between`}
             >
               <p>{t}</p>
               <ChevronRightIcon
@@ -35,14 +35,18 @@ const BlogPosts = () => {
             </div>
           ))}
         </div>
-        <div className="w-full space-y-4">
+        <div className="w-full space-y-4 mt-4">
           <div className="flex justify-end">
             <SortSelect />
           </div>
-          <div className="flex flex-wrap md:flex-row flex-col gap-4">
+          <div className="flex items-center justify-center ">
+          <div className="grid grid-cols-1 items-center gap-y-8 gap-x-2 md:grid-cols-2 justify-center  w-full">
             <BlogCard img={BlogImg3} editMode={true} />
             <BlogCard img={BlogImg} editMode={true} />
             <BlogCard img={BlogImg2} editMode={true} />
+            <BlogCard img={BlogImg} editMode={true} />
+
+          </div>
           </div>
         </div>
       </div>
