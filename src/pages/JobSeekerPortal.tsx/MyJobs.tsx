@@ -1,20 +1,18 @@
 import JobApplicationCard from "@/components/EmployeePortal/JobApplicationCard";
-import SortSelect from "@/components/common/SortSelect";
-import { Button } from "@/components/ui/button";
+import SearchComponent from "@/components/common/SearchComponent";
 import { ChevronRightIcon } from "lucide-react";
 import { useState } from "react";
 
-const JobPosts = () => {
-  const [tab, setTab] = useState("Active");
-  const sideTabs = ["Active", "Inactive", "Drafts", "Deleted"];
+const MyJobs = () => {
+  const [tab, setTab] = useState("Applied Jobs");
+  const sideTabs = ["Saved Jobs", "Applied Jobs", "Job Alerts", "Recent Searches Jobs", "Recently Viewed Jobs", "Deleted Jobs"];
 
   return (
     <div className="container 2xl:max-w-[1600px] lg:max-w-[1400px] 2xl:!my-36 !my-16 space-y-9">
       <div className="flex justify-between gap-3 md:items-center">
-        <h1 className="text-heading !font-[600] 2xl:!text-[35px] !text-[24px]">Job Posts</h1>
-        <Button className="w-full md:w-fit px-8 font-[500] py-5">New Job Post</Button>
+        <h1 className="text-heading !font-[600] 2xl:!text-[35px] !text-[24px]">My Jobs</h1>
       </div>
-      <div className="flex flex-col md:flex-row gap-x-12 gap-y-5">
+      <div className="flex flex-col md:flex-row gap-x-10 gap-y-5">
         <div className="bg-white 2xl:!max-w-[420px] side-card h-fit flex flex-col 2xl:py-10 2xl:px-9 gap-y-6 rounded-xl py-5 px-4  w-full md:max-w-[280px]">
           {sideTabs.map((t, i) => (
             <div
@@ -34,7 +32,7 @@ const JobPosts = () => {
         </div>
         <div className="w-full space-y-4">
           <div className="flex justify-end">
-            <SortSelect />
+            <SearchComponent className="!w-full" btnText="Filter" />
           </div>
           <div className="flex flex-col gap-5 !mt-10">
             <JobApplicationCard />
@@ -47,4 +45,4 @@ const JobPosts = () => {
   );
 };
 
-export default JobPosts;
+export default MyJobs;

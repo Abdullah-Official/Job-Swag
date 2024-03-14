@@ -26,6 +26,10 @@ import JobSeekerHome from "./pages/JobSeekerPortal.tsx/JobSeekerHome";
 import MyAccount from "./pages/JobSeekerPortal.tsx/MyAccount";
 import MyResume from "./pages/JobSeekerPortal.tsx/MyResume";
 import JobBlogPost from "./pages/JobSeekerPortal.tsx/JobBlogPost";
+import MyJobs from "./pages/JobSeekerPortal.tsx/MyJobs";
+import Reviews from "./pages/JobSeekerPortal.tsx/Reviews";
+import Notifications from "./pages/JobSeekerPortal.tsx/Notifications";
+import SettingsPage from "./pages/JobSeekerPortal.tsx/Settings";
 
 function App() {
   // const location = useLocation();
@@ -54,6 +58,11 @@ function App() {
           <Route path="/my-account" element={<MyAccount />} />
           <Route path="/my-resume" element={<MyResume />} />
           <Route path="/blog-post" element={<JobBlogPost />} />
+          <Route path="/my-jobs" element={<MyJobs />} />
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/notifications" element={<Notifications />} />
+          <Route path="/settings" element={<SettingsPage />} />
+
         </Routes>
       </div>
       <Footer />

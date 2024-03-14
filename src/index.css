@@ -65,6 +65,10 @@ body{
   border-bottom-right-radius: 80px
 }
 
+svg.star-svg {
+  display: inline;
+}
+
 /* Media query for screen widths of 1920px and above */
 @media (min-width: 1920px) {
   .slick-prev,
@@ -79,7 +83,7 @@ body{
 }
 @layer utilities {
   .text-heading {
-    @apply !text-[25px] md:!text-[28px] !font-[600] text-[#1B4C81]; /* Example styles for headings */
+    @apply !text-[25px] md:text-[28px] !font-[600] text-[#1B4C81]; /* Example styles for headings */
   }
 }
 
