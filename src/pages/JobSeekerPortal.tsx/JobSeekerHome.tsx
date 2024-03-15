@@ -32,6 +32,9 @@ const JobSeekerHome = () => {
         <Link className="text-main text-sm" to="/settings">
           Settings
         </Link>
+        <Link className="text-main text-sm" to="/messages">
+          Messages
+        </Link>
       </div>
       <SearchComponent />
       <div className="mt-20 border-b-[1px] overflow-x-auto w-full border-[#C6C6C6] flex items-center gap-x-10  justify-center">

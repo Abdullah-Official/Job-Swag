@@ -30,6 +30,9 @@ import MyJobs from "./pages/JobSeekerPortal.tsx/MyJobs";
 import Reviews from "./pages/JobSeekerPortal.tsx/Reviews";
 import Notifications from "./pages/JobSeekerPortal.tsx/Notifications";
 import SettingsPage from "./pages/JobSeekerPortal.tsx/Settings";
+import CreateResume from "./pages/JobSeekerPortal.tsx/CreateResume";
+import EditResume from "./pages/JobSeekerPortal.tsx/EditResume";
+import Messages from "./pages/JobSeekerPortal.tsx/Messages";
 
 function App() {
   // const location = useLocation();
@@ -62,7 +65,9 @@ function App() {
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/settings" element={<SettingsPage />} />
-
+          <Route path="/create-resume" element={<CreateResume />} />
+          <Route path="/edit-resume" element={<EditResume />} />
+          <Route path="/messages" element={<Messages />} />
         </Routes>
       </div>
       <Footer />

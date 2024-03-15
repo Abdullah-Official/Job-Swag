@@ -13,7 +13,7 @@ const SearchComponent = ({className, btnText} : {className?:string, btnText?: st
         <div className="relative w-full">
           <SearchIcon
             size={22}
-            className="text-main_green absolute top-3.5 left-3.5"
+            className="text-main_green absolute top-3.5 z-10 left-3.5"
           />
           <Input
             className="pl-11 py-6 border-[#C6C6C6] "
@@ -24,7 +24,7 @@ const SearchComponent = ({className, btnText} : {className?:string, btnText?: st
         <div className="relative w-full">
           <MapPin
             size={22}
-            className="text-main_green absolute top-3.5 left-3.5"
+            className="text-main_green absolute top-3.5 z-10 left-3.5"
           />
           <Input
             className="pl-11 py-6 border-[#C6C6C6]"
@@ -33,7 +33,7 @@ const SearchComponent = ({className, btnText} : {className?:string, btnText?: st
           />
         </div>
         {/* <Input type="text" placeholder="Location" /> */}
-        <Button className="w-full md:w-fit px-6 2xl:py-6 py-3 2xl:text-[16px]">{btnText || "Find Jobs"}</Button>
+        <Button className="w-full md:w-fit px-6 2xl:py-6 py-3.5 2xl:text-[16px]">{btnText || "Find Jobs"}</Button>
       </div>
     </div>
   );
