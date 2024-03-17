@@ -2,15 +2,15 @@ import SearchComponent from "@/components/common/SearchComponent";
 import JobFeature from "@/assets/images/job-feature.png";
 import JobFeature2 from "@/assets/images/job-feature2.png";
 import JobFeature3 from "@/assets/images/job-feature3.png";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import FeatureCard from "@/components/common/FeatureCard";
 import { Button } from "@/components/ui/button";
 import { PlusIcon } from "lucide-react";
 
 const JobSeekerHome = () => {
   return (
-    <div className="container !my-14 2xl:!my-32 lg:max-w-[1400px] 2xl:max-w-[1600px]">
-      <div className="flex gap-4 mb-10">
+    <div className="container 2xl:!my-36 !my-16 lg:max-w-[1400px] 2xl:max-w-[1600px]">
+      {/* <div className="flex gap-4 mb-10">
         <Link className="text-main text-sm" to="/my-account">
           My Account
         </Link>
@@ -35,7 +35,7 @@ const JobSeekerHome = () => {
         <Link className="text-main text-sm" to="/messages">
           Messages
         </Link>
-      </div>
+      </div> */}
       <SearchComponent />
       <div className="mt-20 border-b-[1px] overflow-x-auto w-full border-[#C6C6C6] flex items-center gap-x-10  justify-center">
         <button className="border-b-4 border-[#55A7A6] pb-2 2xl:pb-4 2xl:text-[24px] font-[700] text-[#1B4C81] text-[14px]  w-full 2xl:w-[260px] md:w-[200px] overflow-hidden whitespace-nowrap">

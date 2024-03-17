@@ -101,25 +101,46 @@ const Navbar = () => {
           </Sheet>
           <div className=" hidden lg:flex gap-x-10">
             <div className="flex gap-x-6 items-end   w-full font-medium">
-              <Link className="text-main text-sm 2xl:text-[20px] font-[500]" to="/">
+              <Link
+                className="text-main text-sm 2xl:text-[20px] font-[500]"
+                to="/"
+              >
                 Home
               </Link>
-              <Link className="text-main text-sm 2xl:text-[20px] font-[500]" to="/about">
+              <Link
+                className="text-main text-sm 2xl:text-[20px] font-[500]"
+                to="/about"
+              >
                 About
               </Link>
-              <Link className="text-main text-sm 2xl:text-[20px] font-[500]" to="/how">
+              <Link
+                className="text-main text-sm 2xl:text-[20px] font-[500]"
+                to="/how"
+              >
                 How It Works
               </Link>
-              <Link className="text-main text-sm 2xl:text-[20px] font-[500]" to="/featured-jobs">
+              <Link
+                className="text-main text-sm 2xl:text-[20px] font-[500]"
+                to="/featured-jobs"
+              >
                 Featured Jobs
               </Link>
-              <Link className="text-main text-sm 2xl:text-[20px] font-[500]" to="/advertise">
+              <Link
+                className="text-main text-sm 2xl:text-[20px] font-[500]"
+                to="/advertise"
+              >
                 Advertise
               </Link>
-              <Link className="text-main text-sm 2xl:text-[20px] font-[500]" to="/blog">
+              <Link
+                className="text-main text-sm 2xl:text-[20px] font-[500]"
+                to="/blog"
+              >
                 Blog
               </Link>
-              <Link className="text-main text-sm 2xl:text-[20px] font-[500]" to="/contact">
+              <Link
+                className="text-main text-sm 2xl:text-[20px] font-[500]"
+                to="/contact"
+              >
                 Contact
               </Link>
               {/* <Link className="text-main text-sm 2xl:text-[20px] font-[500]" to="/emp-portal">
@@ -139,7 +160,9 @@ const Navbar = () => {
                 </Button>
               </Link>
               <Link to={"/create-acc"}>
-                <Button className="2xl:text-[16px] 2xl:py-5 px-4">Create Account</Button>
+                <Button className="2xl:text-[16px] 2xl:py-5 px-4">
+                  Create Account
+                </Button>
               </Link>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assets/images/Logo.png";
 import { Button } from "../ui/button";
 import {
@@ -12,48 +12,29 @@ import { Menu } from "lucide-react";
 import BellIcon from "../../assets/images/bell-icon.png";
 import MsgIcon from "../../assets/images/msg-icon.png";
 import ProfileIcon from "../../assets/images/profile-icon.png";
-import {
-  Cloud,
-  CreditCard,
-  Github,
-  Keyboard,
-  LifeBuoy,
-  LogOut,
-  Mail,
-  MessageSquare,
-  Plus,
-  PlusCircle,
-  Settings,
-  User,
-  UserPlus,
-  Users,
-} from "lucide-react";
+import LogOutIcon from "../../assets/images/logout.png";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuLabel,
-  DropdownMenuPortal,
   DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { navDropdownData } from "@/utils/dropdownData";
 
 const NavbarJobSeeker = () => {
   return (
     <div className=" w-full fixed !z-50">
-      <header className="bg-[#1B4C81] p-2 flex items-center justify-center">
-        <p className="text-xs sm:text-sm text-white text-center">
+      <header className="bg-[#1B4C81] p-2.5 2xl:p-4 flex items-center justify-center">
+        <p className="text-xs sm:text-xs font-[400] 2xl:text-[18px] text-white 2xl:w-[1600px] text-center">
           Join Our Online Immigration Community For Free &nbsp; | &nbsp; High
           Quality Academic Services &nbsp; | &nbsp; Jaymeous Designs - Brand
           Your Business &nbsp; | &nbsp; BEE A Honey BEE Childrens Book
         </p>
       </header>
-      <nav className="p-5 container border-0 border-b-2 bg-[#fafafa] ">
+      <nav className="p-5 container lg:w-[1400px] bg-white 2xl:w-[1600px] border-0 border-b-2 ">
         <div className="container  flex justify-between gap-x-3 items-center">
           <div>
             <Link to={"/"}>
@@ -151,110 +132,74 @@ const NavbarJobSeeker = () => {
                 Contact
               </Link>
             </div>
-            <div className="flex gap-x-3">
-              <div className="bg-[#E7E7E7] w-[33px] h-[33px] flex items-center justify-center rounded-md cursor-pointer">
+            <div className="flex gap-x-6">
+              <NavLink
+                to="/notifications"
+                className="bg-[#E7E7E7] w-[35px] h-[35px] flex items-center justify-center rounded-md cursor-pointer"
+              >
                 <img
                   src={BellIcon}
-                  className="object-contain w-[13px]"
+                  className="object-contain w-[15px]"
                   alt="BellIcon"
                 />
-              </div>
-              <div className="bg-[#E7E7E7] w-[33px] h-[33px] flex items-center justify-center rounded-md cursor-pointer">
+              </NavLink>
+              <NavLink
+                to="/messages"
+                className="bg-[#E7E7E7] w-[35px] h-[35px] flex items-center justify-center rounded-md cursor-pointer"
+              >
                 <img
                   src={MsgIcon}
-                  className="object-contain w-[13px]"
+                  className="object-contain w-[15px]"
                   alt="MsgIcon"
                 />
-              </div>
+              </NavLink>
 
               <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <div className="bg-[#E7E7E7] w-[33px] h-[33px] flex items-center justify-center rounded-md cursor-pointer">
+                <DropdownMenuTrigger asChild className="!border-none ">
+                  <div className="bg-[#E7E7E7] hover:bg-[#fff] w-[35px] h-[35px] flex items-center justify-center rounded-md cursor-pointer">
                     <img
                       src={ProfileIcon}
-                      className="object-contain w-[13px]"
+                      className="object-contain w-[15px]"
                       alt="ProfileIcon"
                     />
                   </div>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-72 shadow_dropdown rounded-lg">
-                  <DropdownMenuLabel className="text-[#5D6A7B] text-xs">Johndavid89@gmail.com</DropdownMenuLabel>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuGroup>
-                    <DropdownMenuItem>
-                      <User className="mr-2 h-4 w-4" />
-                      <span>Profile</span>
-                      <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem>
-                      <CreditCard className="mr-2 h-4 w-4" />
-                      <span>Billing</span>
-                      <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem>
-                      <Settings className="mr-2 h-4 w-4" />
-                      <span>Settings</span>
-                      <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem>
-                      <Keyboard className="mr-2 h-4 w-4" />
-                      <span>Keyboard shortcuts</span>
-                      <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
-                    </DropdownMenuItem>
+                <DropdownMenuContent className="w-auto lg:min-w-[300px] mr-10 mt-4 2xl:min-w-[351px]  px-3  py-3 shadow_dropdown rounded-xl">
+                  <DropdownMenuLabel className="text-[#5D6A7B] text-sm font-[600] mb-1">
+                    Johndavid89@gmail.com
+                  </DropdownMenuLabel>
+                  <DropdownMenuGroup className="my-2">
+                    {navDropdownData.map((n, i) => (
+                      <DropdownMenuItem key={i}>
+                        <NavLink
+                          className="flex items-center gap-1 my-1.5"
+                          to={`/${n.nav}`}
+                        >
+                          <img
+                            src={n.icon}
+                            className="mr-2  w-[18px] h-[18px] object-contain"
+                          />
+                          <span className="text-sm font-[500] text-[#7C7C7C]">
+                            {n.title}
+                          </span>
+                        </NavLink>
+                      </DropdownMenuItem>
+                    ))}
                   </DropdownMenuGroup>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuGroup>
-                    <DropdownMenuItem>
-                      <Users className="mr-2 h-4 w-4" />
-                      <span>Team</span>
-                    </DropdownMenuItem>
-                    <DropdownMenuSub>
-                      <DropdownMenuSubTrigger>
-                        <UserPlus className="mr-2 h-4 w-4" />
-                        <span>Invite users</span>
-                      </DropdownMenuSubTrigger>
-                      <DropdownMenuPortal>
-                        <DropdownMenuSubContent>
-                          <DropdownMenuItem>
-                            <Mail className="mr-2 h-4 w-4" />
-                            <span>Email</span>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem>
-                            <MessageSquare className="mr-2 h-4 w-4" />
-                            <span>Message</span>
-                          </DropdownMenuItem>
-                          <DropdownMenuSeparator />
-                          <DropdownMenuItem>
-                            <PlusCircle className="mr-2 h-4 w-4" />
-                            <span>More...</span>
-                          </DropdownMenuItem>
-                        </DropdownMenuSubContent>
-                      </DropdownMenuPortal>
-                    </DropdownMenuSub>
-                    <DropdownMenuItem>
-                      <Plus className="mr-2 h-4 w-4" />
-                      <span>New Team</span>
-                      <DropdownMenuShortcut>⌘+T</DropdownMenuShortcut>
-                    </DropdownMenuItem>
-                  </DropdownMenuGroup>
-                  <DropdownMenuSeparator />
+                  <DropdownMenuSeparator className="border-1 border-[#C6C6C6]" />
                   <DropdownMenuItem>
-                    <Github className="mr-2 h-4 w-4" />
-                    <span>GitHub</span>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <LifeBuoy className="mr-2 h-4 w-4" />
-                    <span>Support</span>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem disabled>
-                    <Cloud className="mr-2 h-4 w-4" />
-                    <span>API</span>
-                  </DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem>
-                    <LogOut className="mr-2 h-4 w-4" />
-                    <span>Log out</span>
-                    <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
+                    <NavLink
+                      className="flex items-center gap-1 my-1.5"
+                      to={`/`}
+                    >
+                      <img
+                        src={LogOutIcon}
+                        className="mr-2  w-[20px] h-[20px] object-contain"
+                      />
+                      <span className="text-sm text-[#55A7A6] font-[600]">
+                        Log out
+                      </span>
+                    </NavLink>
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>

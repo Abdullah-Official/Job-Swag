@@ -1,6 +1,7 @@
 import {
   Routes,
   Route,
+  useLocation,
   // useLocation,
 } from "react-router-dom";
 import Home from "./pages/Home";
@@ -33,12 +34,36 @@ import SettingsPage from "./pages/JobSeekerPortal.tsx/Settings";
 import CreateResume from "./pages/JobSeekerPortal.tsx/CreateResume";
 import EditResume from "./pages/JobSeekerPortal.tsx/EditResume";
 import Messages from "./pages/JobSeekerPortal.tsx/Messages";
+import { useEffect, useState } from "react";
+import NavbarJobSeeker from "./components/JobSeekerPortal/Navbar";
 
 function App() {
-  // const location = useLocation();
+  const [defaultNavbar, setDefaultNavbar] = useState(true);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (
+      [
+        "/",
+        "/about",
+        "/how",
+        "/featured-jobs",
+        "/advertise",
+        "/blog",
+        "/contact",
+        "/login",
+        "/create-acc",
+      ].includes(location.pathname)
+    ) {
+      setDefaultNavbar(true);
+    } else {
+      setDefaultNavbar(false);
+    }
+  }, [location]);
+
   return (
     <>
-      <Navbar />
+      {defaultNavbar ? <Navbar /> : <NavbarJobSeeker />}
       <div className="pt-[8rem]">
         <Routes>
           <Route path="/" element={<Home />} />
