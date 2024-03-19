@@ -54,7 +54,7 @@ function App() {
         "/login",
         "/create-acc",
         "/employeer",
-        "job-seeker"
+        "/job-seeker"
       ].includes(location.pathname)
     ) {
       setDefaultNavbar(true);
