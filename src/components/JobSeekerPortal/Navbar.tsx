@@ -34,7 +34,7 @@ const NavbarJobSeeker = () => {
           Your Business &nbsp; | &nbsp; BEE A Honey BEE Childrens Book
         </p>
       </header>
-      <nav className="p-5 container lg:w-[1400px] bg-white 2xl:w-[1600px] border-0 border-b-2 ">
+      <nav className="p-5 container lg:max-w-[1400px] 2xl:max-w-[1600px] bg-white  border-0 border-b-2 ">
         <div className="container  flex justify-between gap-x-3 items-center">
           <div>
             <Link to={"/"}>
